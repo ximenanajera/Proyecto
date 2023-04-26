@@ -1,0 +1,257 @@
+# Compile of fetch_tb.v failed with 6 errors.
+# Compile of fetch_tb.v failed with 6 errors.
+# Compile of fetch_tb.v was successful.
+# Compile of fetch_tb.v was successful.
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:34:25 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+add wave -position insertpoint  \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/outPC \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/d \
+sim:/fetch_tb/le \
+sim:/fetch_tb/data
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 10:38:59 on Apr 26,2023, Elapsed time: 0:04:34
+# Errors: 0, Warnings: 5
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:39:03 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+add wave -position insertpoint  \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/outPC \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/d \
+sim:/fetch_tb/le
+add wave -position insertpoint  \
+sim:/fetch_tb/data
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "ram.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Proyecto/Proyecto verilog/MInstuctions.v(11)
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 10:43:15 on Apr 26,2023, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 3
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:43:18 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (31) for port 'add'. The port definition is at: D:/Proyecto/Proyecto verilog/Adder.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/adder File: D:/Proyecto/Proyecto verilog/fetch_tb.v Line: 24
+add wave -position insertpoint  \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/outPC \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/d \
+sim:/fetch_tb/le \
+sim:/fetch_tb/data
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "ram.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Proyecto/Proyecto verilog/MInstuctions.v(11)
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 10:47:28 on Apr 26,2023, Elapsed time: 0:04:10
+# Errors: 0, Warnings: 4
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.MInstructions
+# Error while executing: vsim
+# Usage: vsim
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:47:33 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+add wave -position insertpoint  \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/outPC \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/d \
+sim:/fetch_tb/le \
+sim:/fetch_tb/data
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "ram.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Proyecto/Proyecto verilog/MInstuctions.v(11)
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# Compile of fetch_tb.v was successful.
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v failed with 1 errors.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 1 failed with 1 error.
+# End time: 10:50:53 on Apr 26,2023, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 5
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:51:16 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+# ** Error (suppressible): (vsim-3389) Port 'dataEN' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst File: D:/Proyecto/Proyecto verilog/fetch_tb.v Line: 29
+# ** Error (suppressible): (vsim-3389) Port 'd' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst File: D:/Proyecto/Proyecto verilog/fetch_tb.v Line: 29
+# ** Error (suppressible): (vsim-3389) Port 'le' not found in the connected module (3rd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst File: D:/Proyecto/Proyecto verilog/fetch_tb.v Line: 29
+# Error loading design
+# End time: 10:51:17 on Apr 26,2023, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 2
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:51:43 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+add wave -position insertpoint  \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/outPC \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/d \
+sim:/fetch_tb/le \
+sim:/fetch_tb/data
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "ram.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Proyecto/Proyecto verilog/MInstuctions.v(9)
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 10:52:43 on Apr 26,2023, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 3
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:52:44 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+add wave -position insertpoint  \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/d \
+sim:/fetch_tb/data \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/le \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/outPC
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "ram.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Proyecto/Proyecto verilog/MInstuctions.v(9)
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst
+# WARNING: No extended dataflow license exists
+# Compile of Adder.v was successful.
+# Compile of PC.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of fetch_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Break key hit
+# Break in Module PC at D:/Proyecto/Proyecto verilog/PC.v line 10
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit -sim
+# End time: 10:54:21 on Apr 26,2023, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 3
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:54:21 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+add wave -position insertpoint  \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/d \
+sim:/fetch_tb/data \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/le \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/outPC
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "ram.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/Proyecto/Proyecto verilog/MInstuctions.v(10)
+#    Time: 0 ns  Iteration: 0  Instance: /fetch_tb/Minst
+# Break key hit
+# Break in Module fetch_tb at D:/Proyecto/Proyecto verilog/fetch_tb.v line 14
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Break key hit
+# Break in Module fetch_tb at D:/Proyecto/Proyecto verilog/fetch_tb.v line 14
+quit -sim
+# End time: 10:55:58 on Apr 26,2023, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 1
+vsim work.fetch_tb
+# vsim work.fetch_tb 
+# Start time: 10:56:02 on Apr 26,2023
+# Loading work.fetch_tb
+# Loading work.PC
+# Loading work.Adder
+# Loading work.MInstructions
+add wave -position insertpoint  \
+sim:/fetch_tb/clk_tb \
+sim:/fetch_tb/d \
+sim:/fetch_tb/data \
+sim:/fetch_tb/dataIn \
+sim:/fetch_tb/le \
+sim:/fetch_tb/outFirstAdder \
+sim:/fetch_tb/outPC
+run -all
+# Break key hit
+# Break in Module PC at D:/Proyecto/Proyecto verilog/PC.v line 10
+quit -sim
+# End time: 10:56:45 on Apr 26,2023, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 1

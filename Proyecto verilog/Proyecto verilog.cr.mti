@@ -1,0 +1,29 @@
+{D:/Proyecto/Proyecto verilog/fetch_tb.v} {1 {vlog -work work -stats=none {D:\Proyecto\Proyecto verilog\fetch_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fetch_tb
+
+Top level modules:
+	fetch_tb
+
+} {} {}} {D:/Proyecto/Proyecto verilog/PC.v} {1 {vlog -work work -stats=none {D:/Proyecto/Proyecto verilog/PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {D:/Proyecto/Proyecto verilog/MInstuctions.v} {1 {vlog -work work -stats=none {D:/Proyecto/Proyecto verilog/MInstuctions.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MInstructions
+
+Top level modules:
+	MInstructions
+
+} {} {}} {D:/Proyecto/Proyecto verilog/Adder.v} {1 {vlog -work work -stats=none {D:/Proyecto/Proyecto verilog/Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}}
