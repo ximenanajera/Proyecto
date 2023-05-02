@@ -6,9 +6,6 @@ module ProjectTB ();
     wire [31:0] outPC;
     //Componentes de adder en fetch
     wire [31:0] outAdderPC;
-    //Componentes de Minst en fetch
-    reg [8:0] d = 0;
-    reg le = 1'b0;
     //Componentes para sign extend
     wire [31:0] extendedBits;
     //Componentes de signExtends
@@ -20,6 +17,7 @@ module ProjectTB ();
     //Componentes para mux's
     wire [4:0] muxRegFileDataOut;
     wire [4:0] muxAluOp2DataOut;//Mux para segundo operando de la ALU
+    wire [4:0] muxDataReturnToRegister;//Mux de retorno a register file(banco de registros)
     wire [31:0] outMuxToPC;
     //Componentes de unidad de control
     wire regDst;
@@ -37,7 +35,7 @@ module ProjectTB ();
     //Componentes para ALU
     wire [31:0] resAlu;
     wire zeroFlagAlu;
-    wire [3:0] opAlu;//salida de ALU control
+    wire [3:0] aluSelector;//salida de ALU control
     //Componentes de dataMem
     wire [31:0] dataReadFromMemory;
     //Condición de para mux a PC
@@ -48,6 +46,10 @@ module ProjectTB ();
     always @* begin
         selectShiftPC = branch & zeroFlagAlu;
     end
+    /* initial begin
+        repeat (1) @(posedge clk_tb);
+        $stop;
+    end */
     //assign add = 31'd4;
     /* ====================================
         PC
@@ -65,14 +67,6 @@ module ProjectTB ();
         .originalNumber(outPC),
         .out(outAdderPC)
     );
-        
-    /* ====================================
-    Shift de salida de Sign Extend
-    ==================================== */
-    ShiftLeft2 shiftToMuxPC(
-        .inToShift(extendedBits),
-        .outShifted(shiftedBits)
-    );
     /* ====================================
     Recorrido de bits de signExtend
     ====================================*/
@@ -81,9 +75,15 @@ module ProjectTB ();
         .extendedBits(extendedBits)
     );
     /* ====================================
+    Shift de salida de Sign Extend
+    ==================================== */
+    ShiftLeft2 shiftToMuxPC(
+        .inToShift(extendedBits),
+        .outShifted(shiftedBits)
+    );
+    /* ====================================
     Sumador de SignExtend 
     ====================================*/
-    
     Adder adderSignExtend(
         .add(shiftedBits),
         .originalNumber(outAdderPC),
@@ -128,8 +128,8 @@ module ProjectTB ();
     mux para banco de registros 
      ====================================*/
     Mux01_5Bits muxRegFile(
-        .valOnSel0(instruction[25:21]),
-        .valOnSel1(instruction[20:16]),
+        .valOnSel0(instruction[20:16]),
+        .valOnSel1(instruction[15:11]),
         .selector(regDst),
         .dataOut(muxRegFileDataOut)
     );
@@ -138,7 +138,7 @@ module ProjectTB ();
      ====================================*/
     RegisterFile regFile(
         .regen(RegWrite),//region enable, indica que si se guarda o no
-        .wd(resAlu),//write data, datos a escribir
+        .wd(muxDataReturnToRegister),//write data, datos a escribir
         .RR1(instruction[25:21]),//read registro 1
         .RR2(instruction[20:16]),//read registro 2
         .WA(muxRegFileDataOut),//write Access
@@ -150,17 +150,25 @@ module ProjectTB ();
      ====================================*/
     Mux01_31Bits muxAlu(
         .valOnSel0(aluDR2),
-        .valOnSel1(aluDR2),//De sign extended
+        .valOnSel1(extendedBits),//De sign extended
         .selector(ALUSrc),
         .dataOut(muxAluOp2DataOut)
+    );
+    /*  ====================================
+    Alu Control 
+     ====================================*/
+    AluControl aluControl(
+        .functionField(instruction[5:0]),
+        .AluOp(ALUop),
+        .operation(aluSelector)
     );
     /*  ====================================
     Alu a Data Memory 
      ====================================*/
     ALU alu(
         .op1(aluDR1),
-        .op2(aluDR2),
-        .selOp(opAlu),
+        .op2(muxAluOp2DataOut),
+        .selOp(aluSelector),
         .resultado(resAlu) ,
         .zeroFlag(zeroFlagAlu)
     );
@@ -178,10 +186,10 @@ module ProjectTB ();
     Mux hacia banco de registros (resultados ejecución)
     ====================================*/
     Mux01_31Bits muxReturnToRegister(
-        .valOnSel0(dataReadFromMemory),
-        .valOnSel1(resAlu),//De sign extended
+        .valOnSel0(resAlu),
+        .valOnSel1(dataReadFromMemory),//De sign extended
         .selector(memToReg),
-        .dataOut(muxAluOp2DataOut)
+        .dataOut(muxDataReturnToRegister)
     );
     
     

@@ -6,6 +6,10 @@ module ALU (
     output reg [31:0] resultado,
     output reg zeroFlag
 );
+    initial begin
+        resultado <= 0;
+        zeroFlag <= 0;
+    end
     always @* begin
         case (selOp)
             4'b0000: begin //And 

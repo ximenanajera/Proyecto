@@ -14,6 +14,8 @@ module RegisterFile(
     initial begin
         //Lectura de datos del archivo
         $readmemb("br.txt", banco);
+        DR1 <= 0;
+        DR2 <= 0;
     end
 
     always @* begin

@@ -1,408 +1,44 @@
-# Compile of Mux01_31Bits.v was successful.
-# Compile of Adder.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Adder.v was successful with warnings.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ALU.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of ProjectTB.v failed with 2 errors.
-# Compile of ControlUnit.v failed with 8 errors.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# 14 compiles, 2 failed with 10 errors.
-# Compile of ALU.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of ProjectTB.v failed with 2 errors.
-# Compile of ControlUnit.v failed with 8 errors.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# 14 compiles, 2 failed with 10 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v failed with 2 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v failed with 1 errors.
-# Compile of ShiftLeft2.v was successful.
-# Compile of Adder.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ALU.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of ProjectTB.v failed with 2 errors.
-# Compile of ControlUnit.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# 14 compiles, 1 failed with 2 errors.
-# Compile of Adder.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ALU.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of ProjectTB.v failed with 2 errors.
-# Compile of ControlUnit.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# 14 compiles, 1 failed with 2 errors.
 # Compile of ProjectTB.v was successful.
 vsim work.ProjectTB
 # vsim work.ProjectTB 
-# Start time: 23:30:56 on Apr 30,2023
+# Start time: 21:44:04 on May 01,2023
 # Loading work.ProjectTB
 # Loading work.PC
 # Loading work.Adder
-# Loading work.ShiftLeft2
 # Loading work.SignExtend
+# Loading work.ShiftLeft2
 # Loading work.Mux01_31Bits
 # Loading work.MInstructions
 # Loading work.ControlUnit
 # Loading work.Mux01_5Bits
 # Loading work.RegisterFile
+# Loading work.AluControl
 # Loading work.ALU
 # Loading work.DataMemory
-# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (5) for port 'inputBits'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/SignExtend.v(3).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/signExtend File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 74
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'DR1'.
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 136
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'DR2'.
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 136
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'wd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 135
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 148
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 147
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'op2'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/alu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 164
 # ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 167
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 174
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 177
-# Error loading design
-# End time: 23:30:57 on Apr 30,2023, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 25
-# Compile of ProjectTB.v was successful.
-vsim work.ProjectTB
-# vsim work.ProjectTB 
-# Start time: 23:33:28 on Apr 30,2023
-# Loading work.ProjectTB
-# Loading work.PC
-# Loading work.Adder
-# Loading work.ShiftLeft2
-# Loading work.SignExtend
-# Loading work.Mux01_31Bits
-# Loading work.MInstructions
-# Loading work.ControlUnit
-# Loading work.Mux01_5Bits
-# Loading work.RegisterFile
-# Loading work.ALU
-# Loading work.DataMemory
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'DR1'.
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 136
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'DR2'.
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 136
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 148
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 167
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 177
-# Error loading design
-# End time: 23:33:28 on Apr 30,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 5
-# Compile of ProjectTB.v was successful.
-# Compile of ProjectTB.v was successful.
-# Compile of ProjectTB.v was successful.
-vsim work.ProjectTB
-# vsim work.ProjectTB 
-# Start time: 23:36:48 on Apr 30,2023
-# Loading work.ProjectTB
-# Loading work.PC
-# Loading work.Adder
-# Loading work.ShiftLeft2
-# Loading work.SignExtend
-# Loading work.Mux01_31Bits
-# Loading work.MInstructions
-# Loading work.ControlUnit
-# Loading work.Mux01_5Bits
-# Loading work.RegisterFile
-# Loading work.ALU
-# Loading work.DataMemory
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 148
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 167
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 177
-add wave -position insertpoint  \
-sim:/ProjectTB/dataIn \
-sim:/ProjectTB/clk_tb \
-sim:/ProjectTB/outPC \
-sim:/ProjectTB/outAdderPC \
-sim:/ProjectTB/d \
-sim:/ProjectTB/le \
-sim:/ProjectTB/extendedBits \
-sim:/ProjectTB/instruction \
-sim:/ProjectTB/shiftedBits \
-sim:/ProjectTB/outAdderShift \
-sim:/ProjectTB/muxRegFileDataOut \
-sim:/ProjectTB/muxAluOp2DataOut \
-sim:/ProjectTB/outMuxToPX \
-sim:/ProjectTB/regDst \
-sim:/ProjectTB/branch \
-sim:/ProjectTB/memRead \
-sim:/ProjectTB/memToReg \
-sim:/ProjectTB/ALUop \
-sim:/ProjectTB/memWrite \
-sim:/ProjectTB/ALUSrc \
-sim:/ProjectTB/RegWrite \
-sim:/ProjectTB/aluDR1 \
-sim:/ProjectTB/aluDR2 \
-sim:/ProjectTB/resAlu \
-sim:/ProjectTB/zeroFlagAlu \
-sim:/ProjectTB/opAlu \
-sim:/ProjectTB/dataReadFromMemory
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 184
+add wave -position insertpoint sim:/ProjectTB/alu/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Armando  Hostname: ARMANDO04  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlft0dhyen".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0dhyen
+add wave -position insertpoint sim:/ProjectTB/shiftToMuxPC/*
+add wave -position insertpoint sim:/ProjectTB/regFile/*
+add wave -position insertpoint sim:/ProjectTB/muxAlu/*
 run -all
 # Break key hit
-# Simulation stop requested.
+# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 44
 quit -sim
-# End time: 23:43:49 on Apr 30,2023, Elapsed time: 0:07:01
-# Errors: 0, Warnings: 7
-# Compile of ProjectTB.v failed with 1 errors.
-# Compile of ProjectTB.v was successful.
-vsim work.ProjectTB
-# vsim work.ProjectTB 
-# Start time: 23:44:50 on Apr 30,2023
-# Loading work.ProjectTB
-# Loading work.PC
-# Loading work.Adder
-# Loading work.ShiftLeft2
-# Loading work.SignExtend
-# Loading work.Mux01_31Bits
-# Loading work.MInstructions
-# Loading work.ControlUnit
-# Loading work.Mux01_5Bits
-# Loading work.RegisterFile
-# Loading work.ALU
-# Loading work.DataMemory
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 151
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 170
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 180
-run -all
-# Break key hit
-# Simulation stop requested.
-add wave -position insertpoint  \
-sim:/ProjectTB/dataIn \
-sim:/ProjectTB/clk_tb \
-sim:/ProjectTB/outPC \
-sim:/ProjectTB/outAdderPC \
-sim:/ProjectTB/d \
-sim:/ProjectTB/le \
-sim:/ProjectTB/extendedBits \
-sim:/ProjectTB/instruction \
-sim:/ProjectTB/shiftedBits \
-sim:/ProjectTB/outAdderShift \
-sim:/ProjectTB/muxRegFileDataOut \
-sim:/ProjectTB/muxAluOp2DataOut \
-sim:/ProjectTB/outMuxToPX \
-sim:/ProjectTB/regDst \
-sim:/ProjectTB/branch \
-sim:/ProjectTB/memRead \
-sim:/ProjectTB/memToReg \
-sim:/ProjectTB/ALUop \
-sim:/ProjectTB/memWrite \
-sim:/ProjectTB/ALUSrc \
-sim:/ProjectTB/RegWrite \
-sim:/ProjectTB/aluDR1 \
-sim:/ProjectTB/aluDR2 \
-sim:/ProjectTB/resAlu \
-sim:/ProjectTB/zeroFlagAlu \
-sim:/ProjectTB/opAlu \
-sim:/ProjectTB/dataReadFromMemory \
-sim:/ProjectTB/selectShiftPC
-run -all
-# Break key hit
-# Simulation stop requested.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 151
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 170
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 180
-run -all
-# Break key hit
-# Break in Module PC at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v line 10
-add wave -position insertpoint  \
-sim:/ProjectTB/selectShiftPC
-quit -sim
-# End time: 00:01:17 on May 01,2023, Elapsed time: 0:16:27
-# Errors: 0, Warnings: 4
-# Compile of ProjectTB.v was successful.
-vsim work.ProjectTB
-# vsim work.ProjectTB 
-# Start time: 00:01:26 on May 01,2023
-# Loading work.ProjectTB
-# Loading work.PC
-# Loading work.Adder
-# Loading work.ShiftLeft2
-# Loading work.SignExtend
-# Loading work.Mux01_31Bits
-# Loading work.MInstructions
-# Loading work.ControlUnit
-# Loading work.Mux01_5Bits
-# Loading work.RegisterFile
-# Loading work.ALU
-# Loading work.DataMemory
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 151
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 170
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 180
-add wave -position insertpoint  \
-sim:/ProjectTB/dataIn \
-sim:/ProjectTB/clk_tb \
-sim:/ProjectTB/outPC \
-sim:/ProjectTB/outAdderPC \
-sim:/ProjectTB/d \
-sim:/ProjectTB/le \
-sim:/ProjectTB/extendedBits \
-sim:/ProjectTB/instruction \
-sim:/ProjectTB/shiftedBits \
-sim:/ProjectTB/outAdderSignExtend \
-sim:/ProjectTB/muxRegFileDataOut \
-sim:/ProjectTB/muxAluOp2DataOut \
-sim:/ProjectTB/outMuxToPC \
-sim:/ProjectTB/regDst \
-sim:/ProjectTB/branch \
-sim:/ProjectTB/memRead \
-sim:/ProjectTB/memToReg \
-sim:/ProjectTB/ALUop \
-sim:/ProjectTB/memWrite \
-sim:/ProjectTB/ALUSrc \
-sim:/ProjectTB/RegWrite \
-sim:/ProjectTB/aluDR1 \
-sim:/ProjectTB/aluDR2 \
-sim:/ProjectTB/resAlu \
-sim:/ProjectTB/zeroFlagAlu \
-sim:/ProjectTB/opAlu \
-sim:/ProjectTB/dataReadFromMemory \
-sim:/ProjectTB/selectShiftPC
-run -all
-# Break key hit
-# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 46
-# Compile of Adder.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ALU.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of ProjectTB.v was successful.
-# Compile of ControlUnit.v was successful.
-quit -sim
-# End time: 00:05:57 on May 01,2023, Elapsed time: 0:04:31
-# Errors: 0, Warnings: 5
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# 14 compiles, 0 failed with no errors.
-# Compile of Adder.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ALU.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of ProjectTB.v was successful.
-# Compile of ControlUnit.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# 14 compiles, 0 failed with no errors.
-vsim work.ProjectTB
-# vsim work.ProjectTB 
-# Start time: 00:06:11 on May 01,2023
-# Loading work.ProjectTB
-# Loading work.PC
-# Loading work.Adder
-# Loading work.ShiftLeft2
-# Loading work.SignExtend
-# Loading work.Mux01_31Bits
-# Loading work.MInstructions
-# Loading work.ControlUnit
-# Loading work.Mux01_5Bits
-# Loading work.RegisterFile
-# Loading work.ALU
-# Loading work.DataMemory
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v(5).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/pcOne File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'originalNumber'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/adder File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 62
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'rdAccess'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/Minst File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 108
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 150
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 169
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 179
-add wave -position insertpoint  \
-sim:/ProjectTB/dataIn \
-sim:/ProjectTB/clk_tb \
-sim:/ProjectTB/outAdderPC \
-sim:/ProjectTB/d \
-sim:/ProjectTB/le \
-sim:/ProjectTB/extendedBits \
-sim:/ProjectTB/instruction \
-sim:/ProjectTB/shiftedBits \
-sim:/ProjectTB/outAdderSignExtend \
-sim:/ProjectTB/muxRegFileDataOut \
-sim:/ProjectTB/muxAluOp2DataOut \
-sim:/ProjectTB/outMuxToPC
-add wave -position insertpoint  \
-sim:/ProjectTB/ALUop
-add wave -position insertpoint  \
-sim:/ProjectTB/aluDR1 \
-sim:/ProjectTB/aluDR2 \
-sim:/ProjectTB/resAlu \
-sim:/ProjectTB/zeroFlagAlu \
-sim:/ProjectTB/opAlu \
-sim:/ProjectTB/dataReadFromMemory \
-sim:/ProjectTB/selectShiftPC \
-sim:/ProjectTB/outPC
-run -all
-# Break key hit
-# Simulation stop requested.
-quit -sim
-# End time: 00:06:39 on May 01,2023, Elapsed time: 0:00:28
+# End time: 21:52:54 on May 01,2023, Elapsed time: 0:08:50
 # Errors: 0, Warnings: 9
 # Compile of Adder.v was successful.
 # Compile of fetch_tb.v was successful.
@@ -418,86 +54,60 @@ quit -sim
 # Compile of ShiftLeft2.v was successful.
 # Compile of SignExtend.v was successful.
 # Compile of Mux01_31_33.v was successful.
-# 14 compiles, 0 failed with no errors.
+# Compile of AluControl.v was successful.
+# 15 compiles, 0 failed with no errors.
 vsim work.ProjectTB
 # vsim work.ProjectTB 
-# Start time: 00:07:00 on May 01,2023
+# Start time: 21:53:01 on May 01,2023
 # Loading work.ProjectTB
 # Loading work.PC
 # Loading work.Adder
-# Loading work.ShiftLeft2
 # Loading work.SignExtend
+# Loading work.ShiftLeft2
 # Loading work.Mux01_31Bits
 # Loading work.MInstructions
 # Loading work.ControlUnit
 # Loading work.Mux01_5Bits
 # Loading work.RegisterFile
+# Loading work.AluControl
 # Loading work.ALU
 # Loading work.DataMemory
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v(5).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/pcOne File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'originalNumber'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/adder File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 62
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'rdAccess'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/Minst File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 108
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'wd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 135
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 150
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 147
 # ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 169
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 174
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 179
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 184
+add wave -position insertpoint sim:/ProjectTB/alu/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Armando  Hostname: ARMANDO04  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlfth8j0hq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfth8j0hq
+add wave -position insertpoint sim:/ProjectTB/regFile/*
 run -all
 # Break key hit
-# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 45
+# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 44
+add wave -position insertpoint sim:/ProjectTB/muxReturnToRegister/*
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v(5).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/pcOne File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'originalNumber'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/adder File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 62
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'rdAccess'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/Minst File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 108
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'wd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 135
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 150
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 147
 # ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 169
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 174
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 179
-add wave -position insertpoint  \
-sim:/ProjectTB/dataIn \
-sim:/ProjectTB/clk_tb \
-sim:/ProjectTB/outAdderPC \
-sim:/ProjectTB/d \
-sim:/ProjectTB/le \
-sim:/ProjectTB/extendedBits \
-sim:/ProjectTB/instruction \
-sim:/ProjectTB/shiftedBits \
-sim:/ProjectTB/outAdderSignExtend \
-sim:/ProjectTB/muxRegFileDataOut \
-sim:/ProjectTB/muxAluOp2DataOut \
-sim:/ProjectTB/outMuxToPC \
-sim:/ProjectTB/regDst \
-sim:/ProjectTB/branch \
-sim:/ProjectTB/memRead \
-sim:/ProjectTB/memToReg \
-sim:/ProjectTB/ALUop \
-sim:/ProjectTB/memWrite \
-sim:/ProjectTB/ALUSrc \
-sim:/ProjectTB/RegWrite \
-sim:/ProjectTB/aluDR1 \
-sim:/ProjectTB/aluDR2 \
-sim:/ProjectTB/resAlu \
-sim:/ProjectTB/zeroFlagAlu \
-sim:/ProjectTB/opAlu \
-sim:/ProjectTB/dataReadFromMemory \
-sim:/ProjectTB/selectShiftPC \
-sim:/ProjectTB/outPC
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 184
 run -all
 # Break key hit
 # Simulation stop requested.
 quit -sim
-# End time: 00:07:33 on May 01,2023, Elapsed time: 0:00:33
-# Errors: 0, Warnings: 7
+# End time: 22:00:27 on May 01,2023, Elapsed time: 0:07:26
+# Errors: 0, Warnings: 5
+# Compile of ShiftLeft2.v was successful.
 # Compile of Adder.v was successful.
 # Compile of fetch_tb.v was successful.
 # Compile of MInstuctions.v was successful.
@@ -512,67 +122,231 @@ quit -sim
 # Compile of ShiftLeft2.v was successful.
 # Compile of SignExtend.v was successful.
 # Compile of Mux01_31_33.v was successful.
-# 14 compiles, 0 failed with no errors.
-vsim work.fetch_tb
-# vsim work.fetch_tb 
-# Start time: 00:09:59 on May 01,2023
-# Loading work.fetch_tb
-# Loading work.PC
-# Loading work.Adder
-# Loading work.MInstructions
-quit -sim
-# End time: 00:10:05 on May 01,2023, Elapsed time: 0:00:06
-# Errors: 0, Warnings: 2
+# Compile of AluControl.v was successful.
+# 15 compiles, 0 failed with no errors.
 vsim work.ProjectTB
 # vsim work.ProjectTB 
-# Start time: 00:10:06 on May 01,2023
+# Start time: 22:01:06 on May 01,2023
 # Loading work.ProjectTB
 # Loading work.PC
 # Loading work.Adder
-# Loading work.ShiftLeft2
 # Loading work.SignExtend
+# Loading work.ShiftLeft2
 # Loading work.Mux01_31Bits
 # Loading work.MInstructions
 # Loading work.ControlUnit
 # Loading work.Mux01_5Bits
 # Loading work.RegisterFile
+# Loading work.AluControl
+# Loading work.ALU
+# Loading work.DataMemory
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'wd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/regFile File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 135
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 147
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 174
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 184
+add wave -position insertpoint sim:/ProjectTB/muxReturnToRegister/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Armando  Hostname: ARMANDO04  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlft9z6183".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9z6183
+add wave -position insertpoint sim:/ProjectTB/alu/*
+add wave -position insertpoint sim:/ProjectTB/regFile/*
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 22:03:29 on May 01,2023, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 9
+# Compile of Adder.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ALU.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of ProjectTB.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of AluControl.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.ProjectTB
+# vsim work.ProjectTB 
+# Start time: 22:04:07 on May 01,2023
+# Loading work.ProjectTB
+# Loading work.PC
+# Loading work.Adder
+# Loading work.SignExtend
+# Loading work.ShiftLeft2
+# Loading work.Mux01_31Bits
+# Loading work.MInstructions
+# Loading work.ControlUnit
+# Loading work.Mux01_5Bits
+# Loading work.RegisterFile
+# Loading work.AluControl
+# Loading work.ALU
+# Loading work.DataMemory
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 147
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 174
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 184
+add wave -position insertpoint sim:/ProjectTB/regFile/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Armando  Hostname: ARMANDO04  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftyf13yn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyf13yn
+add wave -position insertpoint sim:/ProjectTB/alu/*
+run -all
+# Break key hit
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/ProjectTB/clk_tb
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 147
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 174
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 184
+run -all
+# Break key hit
+# Simulation stop requested.
+# Compile of ShiftLeft2.v was successful.
+# Load canceled
+quit -sim
+# End time: 22:11:22 on May 01,2023, Elapsed time: 0:07:15
+# Errors: 0, Warnings: 5
+# Compile of Adder.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ALU.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of ProjectTB.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of AluControl.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.ProjectTB
+# vsim work.ProjectTB 
+# Start time: 22:11:29 on May 01,2023
+# Loading work.ProjectTB
+# Loading work.PC
+# Loading work.Adder
+# Loading work.SignExtend
+# Loading work.ShiftLeft2
+# Loading work.Mux01_31Bits
+# Loading work.MInstructions
+# Loading work.ControlUnit
+# Loading work.Mux01_5Bits
+# Loading work.RegisterFile
+# Loading work.AluControl
 # Loading work.ALU
 # Loading work.DataMemory
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
 #    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 151
 # ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 170
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 178
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 180
-add wave -position insertpoint  \
-sim:/ProjectTB/dataIn \
-sim:/ProjectTB/clk_tb \
-sim:/ProjectTB/outPC \
-sim:/ProjectTB/outAdderPC \
-sim:/ProjectTB/d \
-sim:/ProjectTB/le \
-sim:/ProjectTB/extendedBits \
-sim:/ProjectTB/instruction \
-sim:/ProjectTB/shiftedBits \
-sim:/ProjectTB/outAdderSignExtend \
-sim:/ProjectTB/muxRegFileDataOut \
-sim:/ProjectTB/muxAluOp2DataOut \
-sim:/ProjectTB/outMuxToPC \
-sim:/ProjectTB/regDst \
-sim:/ProjectTB/branch \
-sim:/ProjectTB/memRead \
-sim:/ProjectTB/memToReg \
-sim:/ProjectTB/ALUop \
-sim:/ProjectTB/memWrite \
-sim:/ProjectTB/ALUSrc
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 188
+run -all
+# ** Note: $finish    : C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v(51)
+#    Time: 50 ns  Iteration: 0  Instance: /ProjectTB
+# 1
+# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 51
 run -all
 # Break key hit
-# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 46
-add wave -position insertpoint  \
-sim:/ProjectTB/aluDR1 \
-sim:/ProjectTB/aluDR2 \
-sim:/ProjectTB/resAlu
-add wave -position insertpoint  \
-sim:/ProjectTB/opAlu
-# End time: 00:14:13 on May 01,2023, Elapsed time: 0:04:07
+# Simulation stop requested.
+add wave -position insertpoint sim:/ProjectTB/regFile/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Armando  Hostname: ARMANDO04  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftwyeyxg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwyeyxg
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 151
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 178
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 188
+# Load canceled
+run -all
+# ** Note: $finish    : C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v(51)
+#    Time: 50 ns  Iteration: 0  Instance: /ProjectTB
+# 1
+# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 51
+run -all
+# Break key hit
+# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 44
+quit -sim
+# End time: 22:14:59 on May 01,2023, Elapsed time: 0:03:30
 # Errors: 0, Warnings: 4
+# Compile of Adder.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ALU.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of ProjectTB.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of AluControl.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.ProjectTB
+# vsim work.ProjectTB 
+# Start time: 22:15:06 on May 01,2023
+# Loading work.ProjectTB
+# Loading work.PC
+# Loading work.Adder
+# Loading work.SignExtend
+# Loading work.ShiftLeft2
+# Loading work.Mux01_31Bits
+# Loading work.MInstructions
+# Loading work.ControlUnit
+# Loading work.Mux01_5Bits
+# Loading work.RegisterFile
+# Loading work.AluControl
+# Loading work.ALU
+# Loading work.DataMemory
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxAlu File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 151
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (32) for port 'd'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/dataMem File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 178
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'dataOut'. The port definition is at: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /ProjectTB/muxReturnToRegister File: C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v Line: 188
+add wave -position insertpoint sim:/ProjectTB/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Armando  Hostname: ARMANDO04  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlfty4erxw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfty4erxw
+run -all
+# ** Note: $stop    : C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v(51)
+#    Time: 50 ns  Iteration: 1  Instance: /ProjectTB
+# Break in Module ProjectTB at C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v line 51
+# End time: 22:15:30 on May 01,2023, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 7

@@ -10,7 +10,7 @@ z2
 cModel Technology
 dD:/Proyecto
 vAdder
-Z0 !s110 1682921396
+Z0 !s110 1683000901
 !i10b 1
 !s100 MK3>3V_RRm9JY5RcmRzYE3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,45 +20,69 @@ Z3 dC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Pr
 w1682785424
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v
-!i122 204
+!i122 433
 L0 2 7
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1682921395.000000
+Z5 !s108 1683000901.000000
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Adder.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 n@adder
 vALU
-R0
+Z8 !s110 1683000902
 !i10b 1
-!s100 SMa8aIQ4jBZ1f_l9AZddE1
+!s100 Ml8RF9H;HSU^mObeR@b3P1
 R1
-ISd?nSRJ705JVhH^oMn47R2
+I10GZaJTOSfP9bA==;3lF^2
 R2
 R3
-w1682812944
+w1682987414
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v
-!i122 209
-L0 2 37
+!i122 438
+L0 2 41
 R4
 r1
 !s85 0
 31
-Z7 !s108 1682921396.000000
+Z9 !s108 1683000902.000000
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v|
 !i113 1
-R5
 R6
+R7
 n@a@l@u
+vAluControl
+Z10 !s110 1683000904
+!i10b 1
+!s100 VTDCM]@04@hM=Ji0od;n62
+R1
+I5^3?MFkWJ9202:_zN<h5H1
+R2
+R3
+w1682965431
+8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/AluControl.v
+FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/AluControl.v
+!i122 447
+L0 5 46
+R4
+r1
+!s85 0
+31
+Z11 !s108 1683000904.000000
+!s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/AluControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/AluControl.v|
+!i113 1
+R6
+R7
+n@alu@control
 vControlUnit
-Z8 !s110 1682921397
+Z12 !s110 1683000903
 !i10b 1
 !s100 A0g;:]69ehGaj=ZzBgK]o0
 R1
@@ -68,18 +92,18 @@ R3
 w1682918697
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ControlUnit.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ControlUnit.v
-!i122 212
+!i122 441
 L0 2 23
 R4
 r1
 !s85 0
 31
-Z9 !s108 1682921397.000000
+Z13 !s108 1683000903.000000
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ControlUnit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ControlUnit.v|
 !i113 1
-R5
 R6
+R7
 n@control@unit
 vDataMemory
 R8
@@ -92,7 +116,7 @@ R3
 w1682872345
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v
-!i122 210
+!i122 439
 L0 2 21
 R4
 r1
@@ -102,8 +126,8 @@ R9
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v|
 !i113 1
-R5
 R6
+R7
 n@data@memory
 vfetch_tb
 R0
@@ -113,21 +137,21 @@ R1
 IW:zF^>`Hz^>TbQ[DcXaaO3
 R2
 R3
-Z10 w1682785425
+Z14 w1682785425
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/fetch_tb.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/fetch_tb.v
-!i122 205
+!i122 434
 L0 2 33
 R4
 r1
 !s85 0
 31
-R7
+R5
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/fetch_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/fetch_tb.v|
 !i113 1
-R5
 R6
+R7
 vMInstructions
 R0
 !i10b 1
@@ -136,21 +160,21 @@ R1
 IGT7_oRH4?=?lWEQ[HHa`G0
 R2
 R3
-R10
+R14
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v
-!i122 206
+!i122 435
 L0 3 16
 R4
 r1
 !s85 0
 31
-R7
+R5
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v|
 !i113 1
-R5
 R6
+R7
 n@m@instructions
 vMux01
 !s110 1682832057
@@ -164,7 +188,7 @@ w1682832049
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01.v
 !i122 102
-Z11 L0 2 13
+Z15 L0 2 13
 R4
 r1
 !s85 0
@@ -173,11 +197,11 @@ r1
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01.v|
 !i113 1
-R5
 R6
+R7
 n@mux01
 vMux01_31_33
-Z12 !s110 1682921398
+R10
 !i10b 1
 !s100 P]9?PaV@n3fMKhCK=a^S_1
 R1
@@ -187,21 +211,21 @@ R3
 w1682914919
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31_33.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31_33.v
-!i122 217
+!i122 446
 L0 3 14
 R4
 r1
 !s85 0
 31
-Z13 !s108 1682921398.000000
+R11
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31_33.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31_33.v|
 !i113 1
-R5
 R6
+R7
 n@mux01_31_33
 vMux01_31Bits
-R8
+R12
 !i10b 1
 !s100 ?jG:WSEjUzHef^>@n_H_M1
 R1
@@ -211,21 +235,21 @@ R3
 w1682921211
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v
-!i122 214
-R11
+!i122 443
+R15
 R4
 r1
 !s85 0
 31
-R9
+R13
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v|
 !i113 1
-R5
 R6
+R7
 n@mux01_31@bits
 vMux01_5Bits
-R8
+R12
 !i10b 1
 !s100 iijUIY2f_La3b@mXY33W83
 R1
@@ -235,21 +259,21 @@ R3
 w1682910427
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v
-!i122 213
+!i122 442
 L0 4 13
 R4
 r1
 !s85 0
 31
-R9
+R13
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v|
 !i113 1
-R5
 R6
+R7
 n@mux01_5@bits
 vPC
-R0
+R8
 !i10b 1
 !s100 eB[k@gOXDoBC;MAT@CbnZ0
 R1
@@ -259,32 +283,32 @@ R3
 w1682915108
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v
-!i122 207
-R11
+!i122 436
+R15
 R4
 r1
 !s85 0
 31
-R7
+R5
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v|
 !i113 1
-R5
 R6
+R7
 n@p@c
 vProjectTB
-R8
+R12
 !i10b 1
-!s100 VA32[[3dSP2Z>`9OiV:OL1
+!s100 2olhZiChk3zih:FAD[:8]1
 R1
-Io@D?6>WeTb]?OW3m@kf5z3
+IUKngDM>IIl]_4lld<LaWE1
 R2
 R3
-w1682921385
+w1683000892
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v
-!i122 211
-L0 2 187
+!i122 440
+L0 2 195
 R4
 r1
 !s85 0
@@ -293,35 +317,35 @@ R9
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v|
 !i113 1
-R5
 R6
+R7
 n@project@t@b
 vRegisterFile
-R0
+R8
 !i10b 1
-!s100 ChfV0DGL2X^;HF=oeZ_^V3
+!s100 f:kd0OONTWSBS5=2[MQS30
 R1
-I9b?2?2Y3R?`if@=I?P`6T2
+Ijz`1=53:]P4QB>AK94LUM0
 R2
 R3
-w1682812087
+w1682987530
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v
-!i122 208
-L0 2 27
+!i122 437
+L0 2 29
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v|
 !i113 1
-R5
 R6
+R7
 n@register@file
 vShiftLeft2
-R8
+R12
 !i10b 1
 !s100 l:W0YSmAl;ggAGLCOV`^k3
 R1
@@ -331,21 +355,21 @@ R3
 w1682915886
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ShiftLeft2.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ShiftLeft2.v
-!i122 215
+!i122 444
 L0 2 10
 R4
 r1
 !s85 0
 31
-R9
+R13
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ShiftLeft2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ShiftLeft2.v|
 !i113 1
-R5
 R6
+R7
 n@shift@left2
 vSignExtend
-R12
+R10
 !i10b 1
 !s100 nTa84o:L6KHoQd>Y7iZ@V1
 R1
@@ -355,16 +379,16 @@ R3
 w1682911740
 8C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/SignExtend.v
 FC:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/SignExtend.v
-!i122 216
+!i122 445
 L0 2 6
 R4
 r1
 !s85 0
 31
-R13
+R11
 !s107 C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/SignExtend.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/SignExtend.v|
 !i113 1
-R5
 R6
+R7
 n@sign@extend
