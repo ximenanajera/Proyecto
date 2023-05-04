@@ -6,7 +6,6 @@ module Mux01_31Bits (
     output reg [31:0]dataOut
 );
 
-    
     assign dataOut = selector == 1'b1 
                     ? valOnSel1
                     : valOnSel0;

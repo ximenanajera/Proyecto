@@ -16,8 +16,8 @@ module ProjectTB ();
     wire [31:0] outAdderSignExtend;
     //Componentes para mux's
     wire [4:0] muxRegFileDataOut;
-    wire [4:0] muxAluOp2DataOut;//Mux para segundo operando de la ALU
-    wire [4:0] muxDataReturnToRegister;//Mux de retorno a register file(banco de registros)
+    wire [31:0] muxAluOp2DataOut;//Mux para segundo operando de la ALU
+    wire [31:0] muxDataReturnToRegister;//Mux de retorno a register file(banco de registros)
     wire [31:0] outMuxToPC;
     //Componentes de unidad de control
     wire regDst;

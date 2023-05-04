@@ -33,7 +33,7 @@ module ALU (
                 resultado <= ~(op1 | op2);
             end
             default:  begin
-                resultado <= 32'd0;
+                
             end
 
         endcase

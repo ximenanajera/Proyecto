@@ -33,19 +33,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	ShiftLeft2
 
-} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module PC
-
-Top level modules:
-	PC
-
 } {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/DataMemory.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module DataMemory
 
 Top level modules:
 	DataMemory
+
+} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC
+
+Top level modules:
+	PC
 
 } {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_31Bits.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -61,19 +61,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	MInstructions
 
+} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v} {1 {vlog -work work -stats=none {C:\Users\Armando\Documents\Octavo semestre\Proyecto final arquitectura pc\Proyecto\Proyecto verilog\Mux01_5Bits.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux01_5Bits
+
+Top level modules:
+	Mux01_5Bits
+
 } {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ControlUnit.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ControlUnit.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module ControlUnit
 
 Top level modules:
 	ControlUnit
-
-} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Mux01_5Bits
-
-Top level modules:
-	Mux01_5Bits
 
 } {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ALU.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

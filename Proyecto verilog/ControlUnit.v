@@ -11,14 +11,17 @@ module ControlUnit (
     output reg RegWrite
 );
     always @(instruction) begin
-        /* Formato de instrucciones R */
-        regDst <= 1;
-        branch <= 0;
-        memRead <= 0;
-        memToReg <= 0;
-        ALUop <= 10;
-        memWrite <= 0;
-        ALUSrc <= 0;
-        RegWrite <= 1;
+        if (instruction == 6'b000_000) begin
+            /* Formato de instrucciones R
+            No almacena datos en memoria, solo en banco de registros*/
+            regDst <= 1;
+            branch <= 0;
+            memRead <= 0;
+            memToReg <= 0;
+            ALUop <= 10;
+            memWrite <= 0;
+            ALUSrc <= 0;
+            RegWrite <= 1;
+        end
     end
 endmodule //ControlUnit

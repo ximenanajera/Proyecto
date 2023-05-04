@@ -7,10 +7,9 @@ module Mux01_5Bits (
     input selector,
     output reg [4:0]dataOut
 );
-
-    always @(selector) begin
-        dataOut <= selector == 1'b1 
+    
+    assign dataOut = selector == 1'b1 
                     ? valOnSel1
                     : valOnSel0;
-    end
+    
 endmodule //Mux01
