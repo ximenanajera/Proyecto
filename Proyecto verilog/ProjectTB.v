@@ -1,7 +1,6 @@
 `timescale 1ns/1ns
 module ProjectTB ();
 //Componentes de pcOne en fetch
-    reg [31:0] dataIn = 31'd0;
     reg clk_tb = 1'b0;
     wire [31:0] outPC;
     //Componentes de adder en fetch
