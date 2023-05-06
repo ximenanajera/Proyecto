@@ -1,4 +1,3 @@
-
 `timescale 1ns/1ns
 module MInstructions(
     input [31:0] rdAccess,
@@ -7,9 +6,8 @@ module MInstructions(
     reg [7:0] ram [0:255];
     initial begin
         //Lectura de datos del archivo
-        $readmemb("ram.txt", ram);
+        $readmemb("Mem_inst.txt", ram);
     end
-    
 
     always @* begin
         //leer

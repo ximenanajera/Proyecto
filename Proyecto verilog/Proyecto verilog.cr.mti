@@ -54,14 +54,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Mux01_31Bits
 
-} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/MInstuctions.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module MInstructions
-
-Top level modules:
-	MInstructions
-
-} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v} {1 {vlog -work work -stats=none {C:\Users\Armando\Documents\Octavo semestre\Proyecto final arquitectura pc\Proyecto\Proyecto verilog\Mux01_5Bits.v}
+} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/Mux01_5Bits.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Mux01_5Bits
 
@@ -89,18 +82,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Mux01_31_33
 
-} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ProjectTB
-
-Top level modules:
-	ProjectTB
-
 } {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/RegisterFile.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module RegisterFile
 
 Top level modules:
 	RegisterFile
+
+} {} {}} {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v} {1 {vlog -work work -stats=none {C:/Users/Armando/Documents/Octavo semestre/Proyecto final arquitectura pc/Proyecto/Proyecto verilog/ProjectTB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ProjectTB
+
+Top level modules:
+	ProjectTB
 
 } {} {}}
