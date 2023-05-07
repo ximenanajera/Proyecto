@@ -1,0 +1,24 @@
+section .data
+    num1 dd 24      ; primer número
+    num2 dd 36      ; segundo número
+    resultado dd 0  ; variable para almacenar el resultado
+
+section .text
+    global _start
+
+_start:
+    mov eax, [num1] ; mover el primer número en el registro eax
+    mov ebx, [num2] ; mover el segundo número en el registro ebx
+
+    ; algoritmo de Euclides para calcular el MCD
+    gcd:
+        cmp eax, ebx ; comparar eax y ebx
+        jg subtract  ; saltar a subtract si eax es mayor que ebx
+        xchg eax, ebx ; intercambiar eax y ebx
+        subtract:
+            sub eax, ebx ; restar ebx de eax
+            jnz gcd      ; si eax no es cero, saltar a gcd
+
+    ; el resultado está en eax
+    ; mover el resultado en la variable resultado
+    mov [resultado], eax
