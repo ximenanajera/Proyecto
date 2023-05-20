@@ -1,0 +1,370 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Programas/Verilong/Proyecto final Fase 1
+vAdder
+Z0 !s110 1684625402
+!i10b 1
+!s100 MK3>3V_RRm9JY5RcmRzYE3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYFJc<zV[LF=NF<7N]gNEX2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Programas/Verilong/Proyecto Final
+w1684296842
+8C:/Programas/Verilong/Proyecto Final/Adder.v
+FC:/Programas/Verilong/Proyecto Final/Adder.v
+!i122 129
+L0 2 7
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1684625402.000000
+!s107 C:/Programas/Verilong/Proyecto Final/Adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/Adder.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@adder
+vALU
+R0
+!i10b 1
+!s100 aG9^eE?Yeom48CkH:7]Mz2
+R1
+IYz3oBFU5n68C:9SJA2=QZ2
+R2
+R3
+w1684624818
+8C:/Programas/Verilong/Proyecto Final/ALU.v
+FC:/Programas/Verilong/Proyecto Final/ALU.v
+!i122 130
+L0 2 46
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/ALU.v|
+!i113 1
+R6
+R7
+n@a@l@u
+vAluControl
+R0
+!i10b 1
+!s100 gUkz]1MKAmel@5K52QSii3
+R1
+Ij_4a:A^cXF9]Dnj:c?BM93
+R2
+R3
+w1684624813
+8C:/Programas/Verilong/Proyecto Final/AluControl.v
+FC:/Programas/Verilong/Proyecto Final/AluControl.v
+!i122 131
+L0 5 61
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/AluControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/AluControl.v|
+!i113 1
+R6
+R7
+n@alu@control
+vControlUnit
+R0
+!i10b 1
+!s100 Z6R8njPUZHl]C5HX<3Wi=1
+R1
+IH?OMcC2`2NlKTCI6_9Fbk3
+R2
+R3
+w1684624046
+8C:/Programas/Verilong/Proyecto Final/ControlUnit.v
+FC:/Programas/Verilong/Proyecto Final/ControlUnit.v
+!i122 132
+L0 3 97
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/ControlUnit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/ControlUnit.v|
+!i113 1
+R6
+R7
+n@control@unit
+vDataMemory
+R0
+!i10b 1
+!s100 ]z53gi0md^bUblSaZ_=1H0
+R1
+IV@ga@`I:FF5dI]0fk_LB11
+R2
+R3
+w1684296850
+8C:/Programas/Verilong/Proyecto Final/DataMemory.v
+FC:/Programas/Verilong/Proyecto Final/DataMemory.v
+!i122 133
+L0 2 21
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/DataMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/DataMemory.v|
+!i113 1
+R6
+R7
+n@data@memory
+vfetch_tb
+R0
+!i10b 1
+!s100 XJUjH@X68F18LR=MLM1:Z2
+R1
+IS_Z3hG?cb>nIVAQgHQioG1
+R2
+R3
+w1684296901
+8C:/Programas/Verilong/Proyecto Final/fetch_tb.v
+FC:/Programas/Verilong/Proyecto Final/fetch_tb.v
+!i122 134
+L0 2 33
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/fetch_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/fetch_tb.v|
+!i113 1
+R6
+R7
+vMInstructions
+R0
+!i10b 1
+!s100 cSRHWPL0dAhL1J8=aYnD53
+R1
+I18h1F2R8n@n`<;=b82[CD0
+R2
+R3
+w1684296857
+8C:/Programas/Verilong/Proyecto Final/MInstuctions.v
+FC:/Programas/Verilong/Proyecto Final/MInstuctions.v
+!i122 135
+L0 2 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/MInstuctions.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/MInstuctions.v|
+!i113 1
+R6
+R7
+n@m@instructions
+vMux01_31_33
+R0
+!i10b 1
+!s100 P]9?PaV@n3fMKhCK=a^S_1
+R1
+I:hQm2GS5VF29j]eTWbKPM1
+R2
+R3
+w1684296869
+8C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v
+FC:/Programas/Verilong/Proyecto Final/Mux01_31_33.v
+!i122 137
+L0 3 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v|
+!i113 1
+R6
+R7
+n@mux01_31_33
+vMux01_31Bits
+Z8 !s110 1684625403
+!i10b 1
+!s100 HeZIJE<jI=md7;@Iibc;F3
+R1
+Iez^C=^32W?ejTS;Z2W?K[2
+R2
+R3
+w1684296865
+8C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v
+FC:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v
+!i122 138
+L0 2 12
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v|
+!i113 1
+R6
+R7
+n@mux01_31@bits
+vMux01_5Bits
+R0
+!i10b 1
+!s100 Ml]V1nGMS8abz2o@Kd2>n2
+R1
+IFn8GV?hWWT7D9T6@:KK3n1
+R2
+R3
+w1684296872
+8C:/Programas/Verilong/Proyecto Final/Mux01_5Bits.v
+FC:/Programas/Verilong/Proyecto Final/Mux01_5Bits.v
+!i122 136
+L0 4 12
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Programas/Verilong/Proyecto Final/Mux01_5Bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/Mux01_5Bits.v|
+!i113 1
+R6
+R7
+n@mux01_5@bits
+vPC
+R8
+!i10b 1
+!s100 eB[k@gOXDoBC;MAT@CbnZ0
+R1
+Ija^[1MRMnicfL8LJo=;4=3
+R2
+R3
+w1684296875
+8C:/Programas/Verilong/Proyecto Final/PC.v
+FC:/Programas/Verilong/Proyecto Final/PC.v
+!i122 139
+L0 2 13
+R4
+r1
+!s85 0
+31
+Z9 !s108 1684625403.000000
+!s107 C:/Programas/Verilong/Proyecto Final/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/PC.v|
+!i113 1
+R6
+R7
+n@p@c
+vProjectTB
+R8
+!i10b 1
+!s100 ehKOe4LP`JF<:nB;^0ANQ0
+R1
+I0CIF<fPT3Kf>H4CK^2UUM2
+R2
+R3
+w1684625393
+8C:/Programas/Verilong/Proyecto Final/ProjectTB.v
+FC:/Programas/Verilong/Proyecto Final/ProjectTB.v
+!i122 143
+L0 2 196
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Programas/Verilong/Proyecto Final/ProjectTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/ProjectTB.v|
+!i113 1
+R6
+R7
+n@project@t@b
+vRegisterFile
+R8
+!i10b 1
+!s100 f:kd0OONTWSBS5=2[MQS30
+R1
+Ii@_D[Nkekm0fmP`I@;dX?2
+R2
+R3
+w1684296890
+8C:/Programas/Verilong/Proyecto Final/RegisterFile.v
+FC:/Programas/Verilong/Proyecto Final/RegisterFile.v
+!i122 140
+L0 2 29
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Programas/Verilong/Proyecto Final/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/RegisterFile.v|
+!i113 1
+R6
+R7
+n@register@file
+vShiftLeft2
+R8
+!i10b 1
+!s100 l:W0YSmAl;ggAGLCOV`^k3
+R1
+I`QV[6YIo=jF4Ef>hcdbPA3
+R2
+R3
+w1684296893
+8C:/Programas/Verilong/Proyecto Final/ShiftLeft2.v
+FC:/Programas/Verilong/Proyecto Final/ShiftLeft2.v
+!i122 141
+L0 2 10
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Programas/Verilong/Proyecto Final/ShiftLeft2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/ShiftLeft2.v|
+!i113 1
+R6
+R7
+n@shift@left2
+vSignExtend
+R8
+!i10b 1
+!s100 OGhNK0l<8LGF6P50l;H[U3
+R1
+IM@3bRJW[MULiVDDH:^ggL0
+R2
+R3
+w1684623486
+8C:/Programas/Verilong/Proyecto Final/SignExtend.v
+FC:/Programas/Verilong/Proyecto Final/SignExtend.v
+!i122 142
+L0 2 6
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Programas/Verilong/Proyecto Final/SignExtend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Programas/Verilong/Proyecto Final/SignExtend.v|
+!i113 1
+R6
+R7
+n@sign@extend

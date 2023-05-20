@@ -1,0 +1,149 @@
+# Compile of SignExtend.v failed with 1 errors.
+# Compile of SignExtend.v failed with 1 errors.
+# Compile of SignExtend.v failed with 1 errors.
+# Compile of SignExtend.v failed with 1 errors.
+# Compile of SignExtend.v was successful.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v failed with 3 errors.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 1 failed with 3 errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v failed with 2 errors.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v failed with 2 errors.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v failed with 1 errors.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of AluControl.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of fetch_tb.v was successful.
+# Compile of MInstuctions.v was successful.
+# Compile of Mux01_5Bits.v was successful.
+# Compile of Mux01_31_33.v was successful.
+# Compile of Mux01_31Bits.v was successful.
+# Compile of PC.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# Compile of ProjectTB.v was successful.
+# 15 compiles, 0 failed with no errors.

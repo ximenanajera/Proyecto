@@ -1,0 +1,99 @@
+{C:/Programas/Verilong/Proyecto Final/RegisterFile.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/RegisterFile.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/fetch_tb.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/fetch_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fetch_tb
+
+Top level modules:
+	fetch_tb
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/ControlUnit.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/ControlUnit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/SignExtend.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/SignExtend.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SignExtend
+
+Top level modules:
+	SignExtend
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/Mux01_5Bits.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Mux01_5Bits.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux01_5Bits
+
+Top level modules:
+	Mux01_5Bits
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/ALU.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/AluControl.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/AluControl.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module AluControl
+
+Top level modules:
+	AluControl
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/ShiftLeft2.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/ShiftLeft2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ShiftLeft2
+
+Top level modules:
+	ShiftLeft2
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/DataMemory.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/DataMemory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux01_31_33
+
+Top level modules:
+	Mux01_31_33
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/PC.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux01_31Bits
+
+Top level modules:
+	Mux01_31Bits
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/Adder.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/MInstuctions.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/MInstuctions.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MInstructions
+
+Top level modules:
+	MInstructions
+
+} {} {}}
