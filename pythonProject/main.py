@@ -12,14 +12,14 @@ tipo_J = ['J']
 
 # Binary values for type R instructions
 diccionario_instrucciones_R = {
-    'ADD': {'opcode': '000000', 'shamp': '00000', 'func': '100000'},
-    'SUB': {'opcode': '000000', 'shamp': '00000', 'func': '100010'},
-    'MUL': {'opcode': '000000', 'shamp': '00000', 'func': '000010'},
-    'DIV': {'opcode': '000000', 'shamp': '00000', 'func': '000011'},
-    'OR': {'opcode': '000000', 'shamp': '00000', 'func': '100101'},
-    'AND': {'opcode': '000000', 'shamp': '00000', 'func': '100100'},
-    'SLT': {'opcode': '000000', 'shamp': '00000', 'func': '101010'},
-    'NOP': {'opcode': '000000', 'shamp': '00000', 'func': '000000'}
+    'ADD': {'opcode': '000000', 'shamt': '00000', 'func': '100000'},
+    'SUB': {'opcode': '000000', 'shamt': '00000', 'func': '100010'},
+    'MUL': {'opcode': '000000', 'shamt': '00000', 'func': '000010'},
+    'DIV': {'opcode': '000000', 'shamt': '00000', 'func': '000011'},
+    'OR': {'opcode': '000000', 'shamt': '00000', 'func': '100101'},
+    'AND': {'opcode': '000000', 'shamt': '00000', 'func': '100100'},
+    'SLT': {'opcode': '000000', 'shamt': '00000', 'func': '101010'},
+    'NOP': {'opcode': '000000', 'shamt': '00000', 'func': '000000'}
 }
 
 # Binary values for type I instructions
@@ -59,7 +59,7 @@ with open('archivo.txt') as f, open('memoria.txt', 'w') as memoria:
         if instruccion in tipo_R:
             op1, op2, op3 = sorted(map(int, line[1:]))
             opcode = diccionario_instrucciones_R[instruccion]['opcode']
-            shamp = diccionario_instrucciones_R[instruccion]['shamp']
+            shamp = diccionario_instrucciones_R[instruccion]['shamt']
             func = diccionario_instrucciones_R[instruccion]['func']
             op1_bin = bin(op1)[2:].zfill(5)
             op2_bin = bin(op2)[2:].zfill(5)
@@ -76,7 +76,7 @@ with open('archivo.txt') as f, open('memoria.txt', 'w') as memoria:
             op1_bin = bin(int(op1))[2:].zfill(5)
             op2_bin = bin(int(op2))[2:].zfill(5)
             bin_inmediato = inmediato_a_binario(inmediato, 16)
-            resultado = opcode + op1_bin + op2_bin + bin_inmediato
+            resultado = opcode + op2_bin + op1_bin + bin_inmediato
             resultado = textwrap.wrap(resultado, 8)
             memoria.write('\n'.join(resultado) + '\n')
             print('\n'.join(resultado))
