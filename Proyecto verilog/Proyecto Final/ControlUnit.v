@@ -28,7 +28,7 @@ module ControlUnit (
 		/*Formato de instrucciones I*/
 		case(instruction)
 			6'b001000: begin
-				regDst <= 1;
+				regDst <= 0;
 				ALUSrc <= 1;
 				memToReg <= 0;
 				RegWrite <= 1;
@@ -38,7 +38,7 @@ module ControlUnit (
 				ALUop <= 3'b000; //Addw
 			end
 			6'b001010: begin
-				regDst <= 1;
+				regDst <= 0;
 				ALUSrc <= 1;
 				memToReg <= 0;
 				RegWrite <= 1;
@@ -48,7 +48,7 @@ module ControlUnit (
 				ALUop <= 3'b001; //Set on Less
 			end
 			6'b001101: begin
-				regDst <= 1;
+				regDst <= 0;
 				ALUSrc <= 1;
 				memToReg <= 0;
 				RegWrite <= 1;
@@ -58,7 +58,7 @@ module ControlUnit (
 				ALUop <= 3'b100; //OR
 			end
 			6'b001100: begin
-				regDst <= 1;
+				regDst <= 0;
 				ALUSrc <= 1;
 				memToReg <= 0;
 				RegWrite <= 1;

@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
 module DataMemory(
     input [31:0] dataEN,
-    input [5:0] d,
+    input [31:0] d,
     input write,
     input read,
     output reg[31:0] data
