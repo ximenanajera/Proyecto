@@ -1,24 +1,29 @@
-section .data
-    num1 dd 24      ; primer número
-    num2 dd 36      ; segundo número
-    resultado dd 0  ; variable para almacenar el resultado
+# Algoritmo para calcular el MCD de dos números en MIPS
 
-section .text
-    global _start
+# Registro $t0: primer número
+# Registro $t1: segundo número
+# Registro $t2: resto
+# Registro $t3: temporal
+# Registro $t4: MCD
 
-_start:
-    mov eax, [num1] ; mover el primer número en el registro eax
-    mov ebx, [num2] ; mover el segundo número en el registro ebx
+# Inicializar los registros
+addi $t2, $zero, 0   # Inicializar el registro del resto en 0
+add $t4, $zero, $t0  # Inicializar el registro del MCD con el primer número
 
-    ; algoritmo de Euclides para calcular el MCD
-    gcd:
-        cmp eax, ebx ; comparar eax y ebx
-        jg subtract  ; saltar a subtract si eax es mayor que ebx
-        xchg eax, ebx ; intercambiar eax y ebx
-        subtract:
-            sub eax, ebx ; restar ebx de eax
-            jnz gcd      ; si eax no es cero, saltar a gcd
+# Bucle para calcular el MCD
+loop:
+  beq $t1, $zero, end    # Si el segundo número es cero, terminar el bucle
+  sw $t0, 0($sp)        # Guardar el primer número en la pila
+  sw $t1, 4($sp)        # Guardar el segundo número en la pila
+  div $t0, $t1          # Dividir el primer número por el segundo número
+  mfhi $t2              # Guardar el resto en el registro $t2
+  add $t3, $zero, $t0   # Guardar el primer número en el registro temporal
+  lw $t0, 0($sp)        # Restaurar el primer número desde la pila
+  lw $t1, 4($sp)        # Restaurar el segundo número desde la pila
+  move $t0, $t1         # Mover el segundo número al registro del primer número
+  move $t1, $t2         # Mover el resto al registro del segundo número
+  j loop               # Volver al inicio del bucle
 
-    ; el resultado está en eax
-    ; mover el resultado en la variable resultado
-    mov [resultado], eax
+# Fin del bucle, el MCD se encuentra en el registro $t4
+end:
+  nop                   # No operation
