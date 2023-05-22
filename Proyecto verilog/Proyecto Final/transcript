@@ -1,149 +1,51 @@
-# Compile of SignExtend.v failed with 1 errors.
-# Compile of SignExtend.v failed with 1 errors.
-# Compile of SignExtend.v failed with 1 errors.
-# Compile of SignExtend.v failed with 1 errors.
-# Compile of SignExtend.v was successful.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v failed with 3 errors.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 1 failed with 3 errors.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v failed with 2 errors.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 1 failed with 2 errors.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v failed with 2 errors.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 1 failed with 2 errors.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v failed with 1 errors.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 1 failed with 1 error.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 0 failed with no errors.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v failed with 1 errors.
-# 15 compiles, 1 failed with 1 error.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v failed with 1 errors.
-# 15 compiles, 1 failed with 1 error.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 0 failed with no errors.
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of AluControl.v was successful.
-# Compile of ControlUnit.v was successful.
-# Compile of DataMemory.v was successful.
-# Compile of fetch_tb.v was successful.
-# Compile of MInstuctions.v was successful.
-# Compile of Mux01_5Bits.v was successful.
-# Compile of Mux01_31_33.v was successful.
-# Compile of Mux01_31Bits.v was successful.
-# Compile of PC.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of ShiftLeft2.v was successful.
-# Compile of SignExtend.v was successful.
-# Compile of ProjectTB.v was successful.
-# 15 compiles, 0 failed with no errors.
+vsim work.ProjectTB
+# vsim work.ProjectTB 
+# Start time: 10:12:01 on May 22,2023
+# Loading work.ProjectTB
+# Loading work.PC
+# Loading work.Adder
+# Loading work.SignExtend
+# Loading work.ShiftLeft2
+# Loading work.Mux01_31Bits
+# Loading work.MInstructions
+# Loading work.ControlUnit
+# Loading work.Mux01_5Bits
+# Loading work.RegisterFile
+# Loading work.AluControl
+# Loading work.ALU
+# Loading work.DataMemory
+add wave -position insertpoint sim:/ProjectTB/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: moise  Hostname: HUAWEI-MOISES  ProcessID: 10140
+#           Attempting to use alternate WLF file "./wlftr30q5y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr30q5y
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 50 ns ###############
+#   Active process: /ProjectTB/regFile/#ALWAYS#21 @ sub-iteration 0
+#     Source: C:/Programas/Verilong/Proyecto Final/ProjectTB.v:140
+#   Active process: /ProjectTB/regFile/#IMPLICIT-WIRE(DR2)#140 @ sub-iteration 1
+#     Source: C:/Programas/Verilong/Proyecto Final/ProjectTB.v:140
+#   Active process: /ProjectTB/alu/#IMPLICIT-WIRE(resultado)#169 @ sub-iteration 2
+#     Source: C:/Programas/Verilong/Proyecto Final/ProjectTB.v:169
+#   Active process: /ProjectTB/regFile/#ALWAYS#21 @ sub-iteration 3
+#     Source: C:/Programas/Verilong/Proyecto Final/ProjectTB.v:140
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ns.

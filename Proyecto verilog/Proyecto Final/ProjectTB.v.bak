@@ -25,7 +25,7 @@ module ProjectTB ();
     wire branch;
     wire memRead;
     wire memToReg;
-    wire [1:0] ALUop;
+    wire [3:0] ALUop;
     wire memWrite;
     wire ALUSrc;
     wire RegWrite;
@@ -192,10 +192,6 @@ module ProjectTB ();
         .selector(memToReg),
         .dataOut(muxDataReturnToRegister)
     );
-    /* ====================================
-    AND entre el Branch y Zeroflag
-    =====================================*/
-    assign andBZ = (branch && zeroFlagAlu); 
     
     
 endmodule //ProjectTB

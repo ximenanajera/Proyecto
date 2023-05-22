@@ -40,6 +40,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	ALU
 
+} {} {}} {C:/Programas/Verilong/Proyecto Final/DataMemory.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/DataMemory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
 } {} {}} {C:/Programas/Verilong/Proyecto Final/AluControl.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/AluControl.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module AluControl
@@ -53,13 +60,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	ShiftLeft2
-
-} {} {}} {C:/Programas/Verilong/Proyecto Final/DataMemory.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/DataMemory.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module DataMemory
-
-Top level modules:
-	DataMemory
 
 } {} {}} {C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Mux01_31_33.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -75,12 +75,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	PC
 
-} {} {}} {C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v}
+} {} {}} {C:/Programas/Verilong/Proyecto Final/ProjectTB.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/ProjectTB.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Mux01_31Bits
+-- Compiling module ProjectTB
 
 Top level modules:
-	Mux01_31Bits
+	ProjectTB
+
+} {} {}} {C:/Programas/Verilong/Proyecto Final/MInstuctions.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/MInstuctions.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MInstructions
+
+Top level modules:
+	MInstructions
 
 } {} {}} {C:/Programas/Verilong/Proyecto Final/Adder.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Adder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -89,11 +96,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Adder
 
-} {} {}} {C:/Programas/Verilong/Proyecto Final/MInstuctions.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/MInstuctions.v}
+} {} {}} {C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v} {1 {vlog -work work -stats=none {C:/Programas/Verilong/Proyecto Final/Mux01_31Bits.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module MInstructions
+-- Compiling module Mux01_31Bits
 
 Top level modules:
-	MInstructions
+	Mux01_31Bits
 
 } {} {}}

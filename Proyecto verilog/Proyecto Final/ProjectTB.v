@@ -25,7 +25,7 @@ module ProjectTB ();
     wire branch;
     wire memRead;
     wire memToReg;
-    wire [1:0] ALUop;
+    wire [2:0] ALUop;
     wire memWrite;
     wire ALUSrc;
     wire RegWrite;
