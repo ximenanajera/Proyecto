@@ -96,7 +96,7 @@ module ControlUnit (
 			end	
 			6'b000010: begin
 				ALUSrc <= 0;
-				jump <= 1;	//J
+				jump <= 1;	
 			end			
 		endcase
 	    end

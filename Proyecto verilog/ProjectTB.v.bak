@@ -102,7 +102,7 @@ module ProjectTB ();
 	.outShifted(shiftedBitsJ)
     );
     /*==================================== 
-    Mux hacia Mux
+    Mux hacia PC
     ====================================*/
     Mux01_31Bits muxToMux(
         .valOnSel0(outAdderPC),
