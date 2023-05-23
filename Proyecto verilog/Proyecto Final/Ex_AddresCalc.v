@@ -5,16 +5,18 @@ module Ex_AddresCalc (
     input [31:0] zeroFlag,//Obtenido directamente de ALU
     input [31:0] aluResult,//Obtenido directamente de ALU
     input [31:0] writeData,//Proveniente de banco de registros
+    input [4:0] muxRegFileData, 
     input branch,// EX MEM- Obtenido de la unidad control
     input memWrite,// EX MEM- Obtenido de la unidad control
     input memRead,// EX MEM- Obtenido de la unidad control
     input regWrite,// WB - Obtenido de la unidad control
     input memToReg,// WB - Obtenido de la unidad control
-    /* Las salidas estarán relacionadas directamente a la entrada que esta contenida en su nombre */
+    /* Las salidas estar�n relacionadas directamente a la entrada que esta contenida en su nombre */
     output reg [31:0] outpcAdded,
     output reg [31:0] outzeroFlag,
     output reg [31:0] outaluResult,
     output reg [31:0] outWriteData,
+    output reg [4:0] outmuxRegFileData,
     /* Salidas de la unidad de control */
     output reg outBranch,
     output reg outMemWrite, 
@@ -27,6 +29,7 @@ module Ex_AddresCalc (
         outzeroFlag = zeroFlag;
         outaluResult = aluResult;
         outWriteData = writeData;
+        outmuxRegFileData = muxRegFileData;
         /* Salidas de la unidad de control */
         outBranch = branch;
         outMemWrite = memWrite;
