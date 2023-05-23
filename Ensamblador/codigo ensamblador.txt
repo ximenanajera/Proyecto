@@ -1,29 +1,20 @@
-# Algoritmo para calcular el MCD de dos números en MIPS
+addi $2, $0, 0         0
+add $4, $0, $0         4
+beq $1, $0, 60         8
 
-# Registro $t0: primer número
-# Registro $t1: segundo número
-# Registro $t2: resto
-# Registro $t3: temporal
-# Registro $t4: MCD
+sub $10, $0, $1       12
+slt $11, $10, $0      16
+beq $11, $0, 32       20   
+add $10, $10, $1      24
+j 12                  28
 
-# Inicializar los registros
-addi $t2, $zero, 0   # Inicializar el registro del resto en 0
-add $t4, $zero, $t0  # Inicializar el registro del MCD con el primer número
+add $8, $0, $10       32 
+beq $10, $0, 48       36   
+add $9, $0, $10       40 
+j 12                  44
 
-# Bucle para calcular el MCD
-loop:
-  beq $t1, $zero, end    # Si el segundo número es cero, terminar el bucle
-  sw $t0, 0($sp)        # Guardar el primer número en la pila
-  sw $t1, 4($sp)        # Guardar el segundo número en la pila
-  div $t0, $t1          # Dividir el primer número por el segundo número
-  mfhi $t2              # Guardar el resto en el registro $t2
-  add $t3, $zero, $t0   # Guardar el primer número en el registro temporal
-  lw $t0, 0($sp)        # Restaurar el primer número desde la pila
-  lw $t1, 4($sp)        # Restaurar el segundo número desde la pila
-  move $t0, $t1         # Mover el segundo número al registro del primer número
-  move $t1, $t2         # Mover el resto al registro del segundo número
-  j loop               # Volver al inicio del bucle
+add $0, $1, $0        48       
+add $1, $8, $0        52 
+j 60                  56
 
-# Fin del bucle, el MCD se encuentra en el registro $t4
-end:
-  nop                   # No operation
+nop                   60
