@@ -75,7 +75,7 @@ module ProjectTB ();
     wire memToRegEXMEM;
     //Componentes para Buffer MEM/WB
     wire [31:0] dataReadFromMemoryMEMWB;
-    wire [31:0] resALuMEMWB;
+    wire [31:0] resAluMEMWB;
     wire [4:0] muxRegFileDataMEMWB;
     wire regWriteMEMWB;
     wire memToRegMEMWB;
@@ -113,7 +113,7 @@ module ProjectTB ();
     /*====================================
     ShiftLeftJ hacia Mux
     ======================================*/
-    shiftLeft2 shiftoMuxPC(
+    shiftLeft2j shiftoMuxPC(
    	.inToShift(instructionIFID[25:0]),
 	.outShifted(shiftedBitsJ)
     );
@@ -146,7 +146,7 @@ module ProjectTB ();
     Buffer IF/ID 
     ===================================*/
 
-    InstructionFecth BufferIFID(
+    InstructionFetch BufferIFID(
 	.clk(clk_tb),
 	.pcAdded(outAdderPC),
 	.instruction(instruction),
@@ -172,7 +172,7 @@ module ProjectTB ();
         .memWrite(memWrite),
         .ALUSrc(ALUSrc),
         .RegWrite(RegWrite),
-	.jump(Jump)
+	    .jump(Jump)
     );
     
     /* ====================================
@@ -206,7 +206,7 @@ module ProjectTB ();
         .i20_16(instructionIFID[20:16]),
         .i15_11(instructionIFID[15:11]),
         .regDst(regDst),
-        .aluOp(aluOp),
+        .aluOp(ALUop),
         .aluSrc(ALUSrc),
         .branch(branch),
         .memWrite(memWrite),
@@ -232,7 +232,7 @@ module ProjectTB ();
     /* ====================================
     Shift de salida de Sign Extend
     ==================================== */
-    shiftLeft2 shiftToMux(
+    ShiftLeft2 shiftToMux(
         .inToShift(extendedBitsIDEX),
         .outShifted(shiftedBits)
     );
@@ -301,7 +301,7 @@ module ProjectTB ();
         .outaluResult(resAluEXMEM),
         .outWriteData(writeDataEXMEM),
         .outmuxRegFileData(muxRegFileDataEXMEM),
-        .outBranch(writeDataEXMEM),
+        .outBranch(branchEXMEM),
         .outMemWrite(memWriteEXMEM),
         .outMemRead(memReadEXMEM),
         .outRegWrite(regWriteEXMEM),
@@ -329,7 +329,7 @@ module ProjectTB ();
         .regWrite(regWriteEXMEM),
         .memToReg(memToRegEXMEM),
         .outReadData(dataReadFromMemoryMEMWB),
-        .outAluResult(resALuMEMWB),
+        .outAluResult(resAluMEMWB),
         .outmuxRegFileData(muxRegFileDataMEMWB),
         .outRegWrite(regWriteMEMWB),
         .outMemToReg(memToRegMEMWB)
