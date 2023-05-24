@@ -32,22 +32,39 @@ module InstructionDecode (
     output reg outRegWrite,
     output reg outMemToReg
 );
+    initial begin
+        outpcAdded = 0;
+        outRead1 = 0;
+        outRead2 = 0;
+        outi16_0Extended = 0;
+        outi20_16 = 0;
+        outi15_11 = 0;
+        outRegDst = 0;
+        outAluOp = 0;
+        outAluSrc = 0;
+        outBranch = 0;
+        outMemWrite = 0;
+        outMemRead = 0;
+        outRegWrite = 0;
+        outMemToReg = 0;
+    end
+
     always @(posedge clk) begin
-        outpcAdded = pcAdded;
-        outRead1 = Read1;
-        outRead2 = Read2;
-        outi16_0Extended = i16_0Extended;
-        outi20_16 = i20_16;
-        outi15_11 = i15_11;
+        outpcAdded <= pcAdded;
+        outRead1 <= Read1;
+        outRead2 <= Read2;
+        outi16_0Extended <= i16_0Extended;
+        outi20_16 <= i20_16;
+        outi15_11 <= i15_11;
         /* Salidas de la unidad de control */
-        outRegDst = regDst;
-        outAluOp = aluOp;
-        outAluSrc = aluSrc;
-        outBranch = branch;
-        outMemWrite = memWrite;
-        outMemRead = memRead;
-        outRegWrite = regWrite;
-        outMemToReg = memToReg;
+        outRegDst <= regDst;
+        outAluOp <= aluOp;
+        outAluSrc <= aluSrc;
+        outBranch <= branch;
+        outMemWrite <= memWrite;
+        outMemRead <= memRead;
+        outRegWrite <= regWrite;
+        outMemToReg <= memToReg;
     end
 
 endmodule //InstructionDecode

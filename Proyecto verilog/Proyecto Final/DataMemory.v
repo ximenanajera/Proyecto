@@ -16,7 +16,7 @@ module DataMemory(
     always @* begin
         if (write == 1'b1) begin
             //Escribir
-            data <= ram[d];
+            ram[d] = dataEN;
         end
         if (read == 1'b1) begin
             //leer

@@ -14,12 +14,20 @@ module WriteBack (
     output reg outRegWrite,
     output reg outMemToReg
 );
+
+    initial begin
+        outReadData = 0;
+        outAluResult = 0;
+        outmuxRegFileData = 0;
+        outRegWrite = 0;
+        outMemToReg = 0;
+    end 
     always @(posedge clk) begin
-        outReadData = readData;
-        outAluResult = aluResult;
+        outReadData <= readData;
+        outAluResult <= aluResult;
         /* Salidas de la unidad de control */
-        outRegWrite = regWrite;
-        outMemToReg = memToReg;
+        outRegWrite <= regWrite;
+        outMemToReg <= memToReg;
     end
 
 endmodule //WriteBack

@@ -118,7 +118,7 @@ module ProjectTB ();
 	.outShifted(shiftedBitsJ)
     );
     /*==================================== 
-    Mux hacia Mux
+    Mux hacia Mux//posiblemente de jump
     ====================================*/
     Mux01_31Bits muxToMux(
         .valOnSel0(outAdderPCEXMEM), 
@@ -130,18 +130,9 @@ module ProjectTB ();
     Mux01_31Bits muxToPC(
 	.valOnSel0(outMuxToMux),
 	.valOnSel1({outAdderPCEXMEM[31:28], shiftedBitsJ}), 
-	.selector(jump),
+	.selector(Jump),
 	.dataOut(outMuxToPC)
     );
-
- /* ====================================
-    Banco de instrucciones 
-    ====================================*/
-    MInstructions Minst(
-        .rdAccess(outPC),
-        .data(instruction)
-    );
-
  /* ===================================
     Buffer IF/ID 
     ===================================*/
@@ -152,6 +143,13 @@ module ProjectTB ();
 	.instruction(instruction),
 	.outPcAdded(outAdderPCIFID),
 	.outInstruction(instructionIFID)
+    );
+    /* ====================================
+    Banco de instrucciones 
+    ====================================*/
+    MInstructions Minst(
+        .rdAccess(outAdderPCIFID),
+        .data(instruction)
     );
     /* ========================================================================
     ====================================

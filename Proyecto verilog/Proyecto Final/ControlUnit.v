@@ -9,7 +9,8 @@ module ControlUnit (
     output reg [2:0]ALUop,
     output reg memWrite,
     output reg ALUSrc,
-    output reg RegWrite
+    output reg RegWrite,
+    output reg jump
 );
     always @(instruction) begin
         if (instruction == 6'b000_000) begin
@@ -23,6 +24,7 @@ module ControlUnit (
             memWrite <= 0;
             ALUSrc <= 0;
             RegWrite <= 1;
+			jump <= 0;
         end
 	else begin
 		/*Formato de instrucciones I*/
@@ -35,6 +37,7 @@ module ControlUnit (
 				memRead <= 0;
 				memWrite <= 1;
 				branch <= 0; 
+				jump <= 0;
 				ALUop <= 3'b000; //Addw
 			end
 			6'b001010: begin
@@ -45,6 +48,7 @@ module ControlUnit (
 				memRead <= 0;
 				memWrite <= 1;
 				branch <= 0;
+				jump <= 0;
 				ALUop <= 3'b001; //Set on Less
 			end
 			6'b001101: begin
@@ -55,6 +59,7 @@ module ControlUnit (
 				memRead <= 0;
 				memWrite <= 1;
 				branch <= 0;
+				jump <= 0;
 				ALUop <= 3'b100; //OR
 			end
 			6'b001100: begin
@@ -65,6 +70,7 @@ module ControlUnit (
 				memRead <= 0;
 				memWrite <= 1;
 				branch <= 0;
+				jump <= 0;
 				ALUop <= 3'b011; //And 
 			end
 			6'b101011: begin
@@ -73,6 +79,7 @@ module ControlUnit (
 				memRead <= 0;
 				memWrite <= 1;
 				branch <= 0; 
+				jump <= 0;
 				ALUop <= 3'b000; //SW
 			end
 			6'b100011: begin
@@ -83,6 +90,7 @@ module ControlUnit (
 				memRead <= 1;
 				memWrite <= 0;
 				branch <= 0; 
+				jump <= 0;
 				ALUop <= 3'b000; //LW	
 			end
 			6'b000100: begin
@@ -90,9 +98,21 @@ module ControlUnit (
 				RegWrite <= 0;
 				memRead <= 0;
 				memWrite <= 0;
-				branch <= 1; 
+				branch <= 1;
+				jump <= 0;
 				ALUop <= 3'b101; //BEQ
-			end				
+			end	
+			6'b000010: begin
+				regDst <= 0;
+				branch <= 0;
+				memRead <= 0;
+				memToReg <= 0;
+				ALUop <= 3'b000;
+				memWrite <= 0;
+				ALUSrc <= 0;
+				RegWrite <= 0;
+				jump <= 1;
+			end // Jump
 		endcase
 	    end
     	end
