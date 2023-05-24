@@ -78,6 +78,13 @@ module ProjectTB ();
     wire outEAddCalcRegWrite;
     wire outEAddCalcMemToReg;
     wire outEAddCalcJump;
+    /* Cables para "write back" */
+    wire [31:0] outBWBackReadData;
+    wire [31:0] outBWBackAluResult;
+    wire [4:0] outBWBackmuxRegFileData;
+    wire outBWBackRegWrite;
+    wire outBWBackMemToReg;
+    
     always @* begin
         selectShiftPC = branch & zeroFlagAlu;
     end
@@ -163,7 +170,7 @@ module ProjectTB ();
         .wd(muxDataReturnToRegister),//write data, datos a escribir
         .RR1(outInstruction[25:21]),//read registro 1
         .RR2(outInstruction[20:16]),//read registro 2
-        .WA(outEAddCalcmuxRegFileData),//write Access
+        .WA(outBWBackmuxRegFileData),//write Access
         .DR1(aluDR1),//data read 1
         .DR2(aluDR2)//data read 2
     );    
@@ -294,13 +301,29 @@ module ProjectTB ();
         .read(outBIDE_MemRead),
         .data(dataReadFromMemory)//Datos de salida
     );
+
+    WriteBack bufferWBack(
+        .clk(clk_tb),
+        .readData(dataReadFromMemory),
+        .aluResult(outEAddCalcaluResult),
+        .muxRegFileData(outEAddCalcmuxRegFileData),
+        .regWrite(outEAddCalcRegWrite),// WB - Obtenido de la unidad control
+        .memToReg(outEAddCalcMemToReg),// WB - Obtenido de la unidad control
+        /* Las salidas estar�n relacionadas directamente a la entrada que esta contenida en su nombre */
+        .outReadData(outBWBackReadData),
+        .outAluResult(outBWBackAluResult),
+        .outmuxRegFileData(outBWBackmuxRegFileData),
+        /* Salidas de la unidad de control */
+        .outRegWrite(outBWBackRegWrite),
+        .outMemToReg(outBWBackMemToReg)
+    );
     /* ====================================
     Mux hacia banco de registros (resultados ejecución)
     ====================================*/
     Mux01_31Bits muxReturnToRegister(
-        .valOnSel0(outEAddCalcaluResult),
-        .valOnSel1(dataReadFromMemory),//De sign extended
-        .selector(outBIDE_MemToReg),
+        .valOnSel0(outBWBackAluResult),
+        .valOnSel1(outBWBackReadData),//De sign extended
+        .selector(outBWBackMemToReg),
         .dataOut(muxDataReturnToRegister)
     );
     

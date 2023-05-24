@@ -25,6 +25,7 @@ module WriteBack (
     always @(posedge clk) begin
         outReadData <= readData;
         outAluResult <= aluResult;
+        outmuxRegFileData <= muxRegFileData;
         /* Salidas de la unidad de control */
         outRegWrite <= regWrite;
         outMemToReg <= memToReg;
