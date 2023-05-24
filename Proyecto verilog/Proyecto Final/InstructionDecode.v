@@ -15,6 +15,7 @@ module InstructionDecode (
     input memRead,// EX MEM- Obtenido de la unidad control
     input regWrite,// WB - Obtenido de la unidad control
     input memToReg,// WB - Obtenido de la unidad control
+    input jump,
     /* Las salidas estar�n relacionadas directamente a la entrada que esta contenida en su nombre */
     output reg [31:0] outpcAdded,
     output reg [31:0] outRead1,
@@ -30,7 +31,8 @@ module InstructionDecode (
     output reg outMemWrite,
     output reg outMemRead,
     output reg outRegWrite,
-    output reg outMemToReg
+    output reg outMemToReg,
+    output reg outJump
 );
     initial begin
         outpcAdded = 0;
@@ -47,6 +49,7 @@ module InstructionDecode (
         outMemRead = 0;
         outRegWrite = 0;
         outMemToReg = 0;
+        outJump = 0;
     end
 
     always @(posedge clk) begin
@@ -65,6 +68,7 @@ module InstructionDecode (
         outMemRead <= memRead;
         outRegWrite <= regWrite;
         outMemToReg <= memToReg;
+        outJump <= jump;
     end
 
 endmodule //InstructionDecode

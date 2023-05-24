@@ -11,6 +11,7 @@ module Ex_AddresCalc (
     input memRead,// EX MEM- Obtenido de la unidad control
     input regWrite,// WB - Obtenido de la unidad control
     input memToReg,// WB - Obtenido de la unidad control
+    input jump,
     /* Las salidas estar�n relacionadas directamente a la entrada que esta contenida en su nombre */
     output reg [31:0] outpcAdded,
     output reg outzeroFlag,
@@ -22,7 +23,8 @@ module Ex_AddresCalc (
     output reg outMemWrite, 
     output reg outMemRead,
     output reg outRegWrite,
-    output reg outMemToReg
+    output reg outMemToReg,
+    output reg outJump
 );
     initial begin
         outpcAdded = 0;
@@ -35,6 +37,7 @@ module Ex_AddresCalc (
         outMemRead = 0;
         outRegWrite = 0;
         outMemToReg = 0;
+        outJump = 0;
     end
 
     always @(posedge clk) begin
@@ -49,6 +52,7 @@ module Ex_AddresCalc (
         outMemRead <= memRead;
         outRegWrite <= regWrite;
         outMemToReg <= memToReg;
+        outJump <= jump;
     end
 
 endmodule //Ex_AddresCalc

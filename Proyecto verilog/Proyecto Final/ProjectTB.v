@@ -4,27 +4,22 @@ module ProjectTB ();
     reg clk_tb = 1'b0;
     wire [31:0] outPC;
     //AND entre Branch y ZeroFlag
-    wire andBZ; 
+    wire andBZ;
+    wire jump;
     //Componentes de adder en fetch
     wire [31:0] outAdderPC;
     //Componentes para sign extend
     wire [31:0] extendedBits;
     //Componentes de signExtends
     wire [31:0] instruction;
-    //Componentes para buffer IF/ID
-    wire [31:0] outAdderPCIFID;
-    wire [31:0] instructionIFID;
     //Componentes para shift 2
     wire [31:0] shiftedBits;
     //Componentes sumador con shift 2
     wire [31:0] outAdderSignExtend;
-    //Componentes shift left 2 Jump
-    wire [27:0] shiftedBitsJ;
     //Componentes para mux's
     wire [4:0] muxRegFileDataOut;
     wire [31:0] muxAluOp2DataOut;//Mux para segundo operando de la ALU
     wire [31:0] muxDataReturnToRegister;//Mux de retorno a register file(banco de registros)
-    wire [31:0] outMuxToMux;
     wire [31:0] outMuxToPC;
     //Componentes de unidad de control
     wire regDst;
@@ -35,10 +30,9 @@ module ProjectTB ();
     wire memWrite;
     wire ALUSrc;
     wire RegWrite;
-    wire Jump;
     //Componentes de regFile
-    wire [31:0] BufferDR1;
-    wire [31:0] BufferDR2;
+    wire [31:0] aluDR1;
+    wire [31:0] aluDR2;
 
     //Componentes para ALU
     wire [31:0] resAlu;
@@ -46,46 +40,46 @@ module ProjectTB ();
     wire [3:0] aluSelector;//salida de ALU control
     //Componentes de dataMem
     wire [31:0] dataReadFromMemory;
-    //Componentes para Buffer ID/EX
-    wire regDstIDEX;
-    wire branchIDEX;
-    wire memReadIDEX;
-    wire memToRegIDEX;
-    wire [2:0] ALUopIDEX;
-    wire memWriteIDEX;
-    wire ALUSrcIDEX;
-    wire RegWriteIDEX;
-    wire JumpIDEX;
-    wire [31:0]outAdderPCIDEX;
-    wire [31:0]aluDR1;
-    wire [31:0]aluDR2;
-    wire [31:0]extendedBitsIDEX;
-    wire [4:0] inst20_16;
-    wire [4:0] inst15_11;
-    //Componentes para Buffer EX/MEM
-    wire [31:0]outAdderPCEXMEM;
-    wire zeroFlagEXMEM;
-    wire [31:0] resAluEXMEM;
-    wire [31:0] writeDataEXMEM;
-    wire [4:0] muxRegFileDataEXMEM;
-    wire branchEXMEM;
-    wire memWriteEXMEM;
-    wire memReadEXMEM;
-    wire regWriteEXMEM;
-    wire memToRegEXMEM;
-    //Componentes para Buffer MEM/WB
-    wire [31:0] dataReadFromMemoryMEMWB;
-    wire [31:0] resAluMEMWB;
-    wire [4:0] muxRegFileDataMEMWB;
-    wire regWriteMEMWB;
-    wire memToRegMEMWB;
-    //Condici�n de para mux a PC
+    //Condición de para mux a PC
     reg selectShiftPC;
-    //ejecuci�n indefinida cada 50 unidades de tiempo para clk
+    //ejecución indefinida cada 50 unidades de tiempo para clk
     always #50 clk_tb = ~clk_tb;
     
+    /* Variables para "instruction fetch" */
+    wire [31:0] outPcAdded;
+    wire [31:0] outInstruction;
+
+    /* Cables para "Instruction decode" */
+    wire [31:0] outBIDE_pcAdded;
+    wire [31:0] outBIDE_Read1;
+    wire [31:0] outBIDE_Read2;
+    wire [31:0] outBIDE_i16_0Extended;
+    wire [4:0] outBIDE_i20_16;
+    wire [4:0] outBIDE_i15_11;
+    wire outBIDE_RegDst;
+    wire [2:0] outBIDE_AluOp;
+    wire outBIDE_AluSrc;
+    wire outBIDE_Branch;
+    wire outBIDE_MemWrite;
+    wire outBIDE_MemRead;
+    wire outBIDE_RegWrite;
+    wire outBIDE_MemToReg;
+    wire outBIDE_Jump;
+
+    /* Cables para buffer "Ex_addresCalc" */
+    wire [31:0] outEAddCalcpcAdded;
+    wire outEAddCalczeroFlag;
+    wire [31:0] outEAddCalcaluResult;
+    wire [31:0] outEAddCalcWriteData;
+    wire [4:0] outEAddCalcmuxRegFileData;
+    wire outEAddCalcBranch;
+    wire outEAddCalcMemWrite;
+    wire outEAddCalcMemRead;
+    wire outEAddCalcRegWrite;
+    wire outEAddCalcMemToReg;
+    wire outEAddCalcJump;
     always @* begin
-        selectShiftPC = branchEXMEM & zeroFlagEXMEM;
+        selectShiftPC = branch & zeroFlagAlu;
     end
     /* initial begin
         repeat (1) @(posedge clk_tb);
@@ -108,60 +102,49 @@ module ProjectTB ();
         .originalNumber(outPC),
         .out(outAdderPC)
     );
-    
-    
-    /*====================================
-    ShiftLeftJ hacia Mux
-    ======================================*/
-    shiftLeft2j shiftoMuxPC(
-   	.inToShift(instructionIFID[25:0]),
-	.outShifted(shiftedBitsJ)
-    );
-    /*==================================== 
-    Mux hacia Mux//posiblemente de jump
+    /* ====================================
+    Recorrido de bits de signExtend
     ====================================*/
-    Mux01_31Bits muxToMux(
-        .valOnSel0(outAdderPCEXMEM), 
+    SignExtend signExtend(
+        .inputBits(outInstruction[15:0]),
+        .extendedBits(extendedBits)
+    );
+    
+    
+    /*==================================== 
+    Mux hacia PC
+    ====================================*/
+    Mux01_31Bits muxToPC(
+        .valOnSel0(outEAddCalcpcAdded),
         .valOnSel1(outAdderSignExtend),
         .selector(selectShiftPC),
-        .dataOut(outMuxToMux)
+        .dataOut(outMuxToPC)
     );
-
-    Mux01_31Bits muxToPC(
-	.valOnSel0(outMuxToMux),
-	.valOnSel1({outAdderPCEXMEM[31:28], shiftedBitsJ}), 
-	.selector(Jump),
-	.dataOut(outMuxToPC)
-    );
- /* ===================================
-    Buffer IF/ID 
-    ===================================*/
-
-    InstructionFetch BufferIFID(
-	.clk(clk_tb),
-	.pcAdded(outAdderPC),
-	.instruction(instruction),
-	.outPcAdded(outAdderPCIFID),
-	.outInstruction(instructionIFID)
-    );
-    /* ====================================
-    Banco de instrucciones 
-    ====================================*/
-    MInstructions Minst(
-        .rdAccess(outAdderPCIFID),
-        .data(instruction)
-    );
+    
     /* ========================================================================
     ====================================
     Fin de ciclo fetch
     ====================================
     ======================================================================== */
-   
+    /* ====================================
+    Banco de instrucciones 
+    ====================================*/
+    MInstructions Minst(
+        .rdAccess(outPC),
+        .data(instruction)
+    );
+    InstructionFetch bufferIFetch(
+        .clk(clk_tb),
+        .pcAdded(outAdderPC),
+        .instruction(instruction),
+        .outPcAdded(outPcAdded),
+        .outInstruction(outInstruction) 
+    );
     /*  ====================================
     Unidad de control 
      ====================================*/
     ControlUnit controlUnit(
-        .instruction(instructionIFID[31:26]),
+        .instruction(outInstruction[31:26]),
         .regDst(regDst),
         .branch(branch),
         .memRead(memRead),
@@ -170,68 +153,60 @@ module ProjectTB ();
         .memWrite(memWrite),
         .ALUSrc(ALUSrc),
         .RegWrite(RegWrite),
-	    .jump(Jump)
+        .jump(jump)
     );
-    
     /* ====================================
     Banco de registros 
      ====================================*/
     RegisterFile regFile(
-        .regen(RegWriteMEMWB),//region enable, indica que si se guarda o no
+        .regen(RegWrite),//region enable, indica que si se guarda o no
         .wd(muxDataReturnToRegister),//write data, datos a escribir
-        .RR1(instructionIFID[25:21]),//read registro 1
-        .RR2(instructionIFID[20:16]),//read registro 2
-        .WA(muxRegFileDataOut),//write Access
-        .DR1(BufferDR1),//data read 1
-        .DR2(BufferDR2)//data read 2
-    );
-    /* ====================================
-    Recorrido de bits de signExtend
-    ====================================*/
-    SignExtend signExtend(
-        .inputBits(instructionIFID[15:0]),
-        .extendedBits(extendedBits)
-    );
-    /* =====================================
-    Buffer ID/EX
-    ========================================*/
-    InstructionDecode BufferIDEX(
+        .RR1(outInstruction[25:21]),//read registro 1
+        .RR2(outInstruction[20:16]),//read registro 2
+        .WA(outEAddCalcmuxRegFileData),//write Access
+        .DR1(aluDR1),//data read 1
+        .DR2(aluDR2)//data read 2
+    );    
+    /* Buffer para "Instruction decode" */
+    InstructionDecode bufferIDecode(
         .clk(clk_tb),
-        .pcAdded(outAdderPCIFID),
-        .Read1(BufferDR1),
-        .Read2(BufferDR2),
-        .i16_0Extended(extendedBits),
-        .i20_16(instructionIFID[20:16]),
-        .i15_11(instructionIFID[15:11]),
-        .regDst(regDst),
-        .aluOp(ALUop),
-        .aluSrc(ALUSrc),
-        .branch(branch),
-        .memWrite(memWrite),
-        .memRead(memRead),
-        .regWrite(RegWrite),
-        .memToReg(memToReg),
-        .outpcAdded(outAdderPCIDEX),
-        .outRead1(aluDR1),
-        .outRead2(aluDR2),
-        .outi16_0Extended(extendedBitsIDEX),
-        .outi20_16(inst20_16),
-        .outi15_11(inst15_11),
-        .outRegDst(regDstIDEX),
-        .outAluOp(ALUopIDEX),
-        .outAluSrc(ALUSrcIDEX),
-        .outBranch(branchIDEX),
-        .outMemWrite(memWriteIDEX),
-        .outMemRead(memReadIDEX),
-        .outRegWrite(RegWriteIDEX),
-        .outMemToReg(memToRegIDEX)
+        .pcAdded(outPcAdded),
+        .Read1(aluDR1),//Obtenido desde banco de registros
+        .Read2(aluDR2),//Obtenido desde banco de registros
+        .i16_0Extended(extendedBits),//Obtenido del "sign extend" de los 16 bits menos significativos de lainstrucci�n
+        .i20_16(outInstruction[20:16]),
+        .i15_11(outInstruction[15:11]),
+        .regDst(regDst),// EX - Obtenido de la unidad control
+        .aluOp(ALUop),// EX - Obtenido de la unidad control
+        .aluSrc(ALUSrc),// EX - Obtenido de la unidad control
+        .branch(branch),// EX MEM- Obtenido de la unidad control
+        .memWrite(memWrite),// EX MEM- Obtenido de la unidad control
+        .memRead(memRead),// EX MEM- Obtenido de la unidad control
+        .regWrite(RegWrite),// WB - Obtenido de la unidad control
+        .memToReg(memToReg),// WB - Obtenido de la unidad control
+        .jump(jump),
+        /* Las salidas estar�n relacionadas directamente a la entrada que esta contenida en su nombre */
+        .outpcAdded(outBIDE_pcAdded),
+        .outRead1(outBIDE_Read1),
+        .outRead2(outBIDE_Read2),
+        .outi16_0Extended(outBIDE_i16_0Extended),
+        .outi20_16(outBIDE_i20_16),
+        .outi15_11(outBIDE_i15_11),
+        .outRegDst(outBIDE_RegDst),
+        .outAluOp(outBIDE_AluOp),
+        .outAluSrc(outBIDE_AluSrc),
+        .outBranch(outBIDE_Branch),
+        .outMemWrite(outBIDE_MemWrite),
+        .outMemRead(outBIDE_MemRead),
+        .outRegWrite(outBIDE_RegWrite),
+        .outMemToReg(outBIDE_MemToReg),
+        .outJump(outBIDE_Jump)
     );
-
     /* ====================================
     Shift de salida de Sign Extend
     ==================================== */
-    ShiftLeft2 shiftToMux(
-        .inToShift(extendedBitsIDEX),
+    ShiftLeft2 shiftToMuxPC(
+        .inToShift(outBIDE_i16_0Extended),
         .outShifted(shiftedBits)
     );
     /* ====================================
@@ -239,107 +214,93 @@ module ProjectTB ();
     ====================================*/
     Adder adderSignExtend(
         .add(shiftedBits),
-        .originalNumber(outAdderPCIDEX), 
+        .originalNumber(outBIDE_pcAdded),
         .out(outAdderSignExtend)
-    );
-
-    /* ====================================
-    mux para banco de registros 
-     ====================================*/
-    Mux01_5Bits muxRegFile(
-        .valOnSel0(inst20_16),
-        .valOnSel1(inst15_11),
-        .selector(regDstIDEX),
-        .dataOut(muxRegFileDataOut)
     );
     /*  ====================================
     mux01 con 32 bits hacia ALU 
      ====================================*/
     Mux01_31Bits muxAlu(
-        .valOnSel0(aluDR2),
-        .valOnSel1(extendedBitsIDEX),//De sign extended
-        .selector(ALUSrcIDEX),
+        .valOnSel0(outBIDE_Read2),
+        .valOnSel1(outBIDE_i16_0Extended),//De sign extended
+        .selector(outBIDE_AluSrc),
         .dataOut(muxAluOp2DataOut)
     );
     /*  ====================================
     Alu Control 
      ====================================*/
     AluControl aluControl(
-        .functionField(extendedBitsIDEX[5:0]), 
-        .AluOp(ALUopIDEX),
+        .functionField(outBIDE_i16_0Extended[5:0]),
+        .AluOp(outBIDE_AluOp),
         .operation(aluSelector)
     );
     /*  ====================================
     Alu a Data Memory 
      ====================================*/
     ALU alu(
-        .op1(aluDR1),
+        .op1(outBIDE_Read1),
         .op2(muxAluOp2DataOut),
         .selOp(aluSelector),
         .resultado(resAlu) ,
         .zeroFlag(zeroFlagAlu)
     );
     /* ====================================
-    BUFFER EX/MEM
-    =======================================*/
-    Ex_AddresCalc BufferEXMEM(
-        .clk(clk_tb),
-        .pcAdded(outAdderSignExtend),
-        .zeroFlag(zeroFlagAlu),
-        .aluResult(resAlu),
-        .writeData(aluDR2),
-        .muxRegFileData(muxRegFileDataOut),
-        .branch(branchIDEX),
-        .memWrite(memWriteIDEX),
-        .memRead(memReadIDEX),
-        .regWrite(RegWriteIDEX),
-        .memToReg(memToRegIDEX),
-        .outpcAdded(outAdderPCEXMEM),
-        .outzeroFlag(zeroFlagEXMEM),
-        .outaluResult(resAluEXMEM),
-        .outWriteData(writeDataEXMEM),
-        .outmuxRegFileData(muxRegFileDataEXMEM),
-        .outBranch(branchEXMEM),
-        .outMemWrite(memWriteEXMEM),
-        .outMemRead(memReadEXMEM),
-        .outRegWrite(regWriteEXMEM),
-        .outMemToReg(memToRegEXMEM)
+    mux para banco de registros 
+     ====================================*/
+    Mux01_5Bits muxRegFile(
+        .valOnSel0(outInstruction[20:16]),
+        .valOnSel1(outInstruction[15:11]),
+        .selector(outBIDE_RegDst),
+        .dataOut(muxRegFileDataOut)
     );
+
+    
+
+    Ex_AddresCalc bufferExAddCalc(
+        .clk(clk_tb),
+        .pcAdded(outBIDE_pcAdded),
+        .zeroFlag(zeroFlagAlu),//Obtenido directamente de ALU
+        .aluResult(resAlu),//Obtenido directamente de ALU
+        .writeData(outBIDE_Read2),//Proveniente de banco de registros
+        .muxRegFileData(muxRegFileDataOut), //Multiplexor hacia banco de registros
+        .branch(outBIDE_Branch),// EX MEM- Obtenido de la unidad control
+        .memWrite(outBIDE_MemWrite),// EX MEM- Obtenido de la unidad control
+        .memRead(outBIDE_MemRead),// EX MEM- Obtenido de la unidad control
+        .regWrite(outBIDE_RegWrite),// WB - Obtenido de la unidad control
+        .memToReg(outBIDE_MemToReg),// WB - Obtenido de la unidad control
+        .jump(outBIDE_Jump),
+        /* Las salidas estar�n relacionadas directamente a la entrada que esta contenida en su nombre */
+        .outpcAdded(outEAddCalcpcAdded),
+        .outzeroFlag(outEAddCalczeroFlag),
+        .outaluResult(outEAddCalcaluResult),
+        .outWriteData(outEAddCalcWriteData),
+        .outmuxRegFileData(outEAddCalcmuxRegFileData),
+        /* Salidas de la unidad de control */
+        .outBranch(outEAddCalcBranch),
+        .outMemWrite(outEAddCalcMemWrite), 
+        .outMemRead(outEAddCalcMemRead),
+        .outRegWrite(outEAddCalcRegWrite),
+        .outMemToReg(outEAddCalcMemToReg),
+        .outJump(outEAddCalcJump)
+    );
+
     /* ====================================
     Resultados de la ALU 
     ====================================*/
     DataMemory dataMem(
-        .dataEN(resAluEXMEM),//Datos de entrada
-        .d(writeDataEXMEM),//Direcci�n de memor�a
-        .write(memWriteEXMEM),
-        .read(memReadEXMEM),
+        .dataEN(outBIDE_Read2),//Datos de entrada
+        .d(outEAddCalcaluResult),//Dirección de memoría
+        .write(outBIDE_MemWrite),
+        .read(outBIDE_MemRead),
         .data(dataReadFromMemory)//Datos de salida
     );
-
-    /*======================================
-    BUFFER MEM/WB
-    ========================================*/
-    WriteBack BufferMEMWB(
-        .clk(clk_tb),
-        .readData(dataReadFromMemory),
-        .aluResult(resAluEXMEM),
-        .muxRegFileData(muxRegFileDataEXMEM),
-        .regWrite(regWriteEXMEM),
-        .memToReg(memToRegEXMEM),
-        .outReadData(dataReadFromMemoryMEMWB),
-        .outAluResult(resAluMEMWB),
-        .outmuxRegFileData(muxRegFileDataMEMWB),
-        .outRegWrite(regWriteMEMWB),
-        .outMemToReg(memToRegMEMWB)
-    );
-
     /* ====================================
-    Mux hacia banco de registros (resultados ejecuci�n)
+    Mux hacia banco de registros (resultados ejecución)
     ====================================*/
     Mux01_31Bits muxReturnToRegister(
-        .valOnSel0(resAluMEMWB),
-        .valOnSel1(dataReadFromMemoryMEMWB),//De sign extended
-        .selector(memToRegMEMWB),
+        .valOnSel0(outEAddCalcaluResult),
+        .valOnSel1(dataReadFromMemory),//De sign extended
+        .selector(outBIDE_MemToReg),
         .dataOut(muxDataReturnToRegister)
     );
     
